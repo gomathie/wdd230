@@ -4,81 +4,104 @@
     --primary-color: rgb(233, 235, 135);
     --secondary-color: rgb(185, 207, 226);
     --accent1-color: rgb(34, 3, 83);
+    --accent2-color: rgba(233, 229, 229, 0.897);
 
-    --heading-font: "Mostserrat";
-    --paragraph-font: "Roboto";
+    --heading-font: "Montserrat", sans-serif;
+    --paragraph-font: "Roboto", Arial, sans-serif;
 }
 
 body {
-    font-family: var(--paragraph-font);
-    font-size: 1.2rem;
-    z-index: -1;
+    height: 100vh;
+    text-align: center;
 }
 
 header {
-    background-color: var(--accent1-color);
-    color: var(--secondary-color);
-    text-align: center;
+    background: var(--accent1-color);
     padding: 10px;
+    display: block;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    display: grid;
+    margin: 0 auto;
 }
 
 header img {
+    margin-right: 2em;
+    border: solid var(--accent2-color);
     max-width: 150px;
-    border-radius: 25%;
+    border-radius: 10%;
     grid-column: 2/3;
-    border: 1.5px solid var(--accent1-color);
-}
 
-header h1 {
-    grid-column: 3/5;
 }
 
 nav {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
     display: grid;
-    padding: 1rem;
-    text-align: center;
+    grid-template-columns: 1fr;
+    background: var(--accent2-color);
+    color: var(--secondary-color);
 }
 
-h1,
-h2,
-h3 {
-    font-family: var(--heading-font);
-    text-align: center;
+nav a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    font-family: Arial;
     padding: 1em;
 }
 
-h3 {
-    background-color: var(--accent1-color);
-    color: var(--secondary-color);
-}
-
 main {
-    max-width: 900px;
     display: grid;
-    padding: 50px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-p {
-    margin-left: 20px !important;
-}
-
-
-.card {
-    background-color: var(--secondary-color);
-    border-radius: 10px;
+    grid-template-columns: 1fr;
+    width: 80%;
+    background: var(--secondary-color);
+    padding: 2rem;
+    margin: 1rem auto;
 }
 
 footer {
-    background-color: var(--accent1-color);
-    color: var(--secondary-color);
+    display: inline-block;
+    background: var(--accent1-color);
+    padding: 1rem;
+    color: white;
     text-align: center;
-    padding: 10px;
+    width: 100%;
+}
+
+h1 {
+    color: white;
+    display: inline;
+    vertical-align: 200%;
+    font-family: var(--paragraph-font);
+}
+
+h2 {
+    font-family: var(--heading-font), Arial, sans-serif;
+    border-bottom: solid;
+    border-width: .75px;
+    border-color: grey;
+    padding: 0 0 .5em 0;
+}
+
+h3 {
+    background: var(--accent1-color);
+    color: white;
+    padding: .5em;
+    margin: 0;
+}
+
+.card {
+    width: 100%;
+    border: solid;
+    border-width: .5px;
+    border-color: var(--accent1-color);
+    border-radius: .5em;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+
+
+ul,
+li {
+    list-style-type: none;
+    margin: .5em;
+    padding: 0;
+    text-align: left;
 }
