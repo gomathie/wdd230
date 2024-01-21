@@ -20,11 +20,15 @@ h1 {
 
 main {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
 }
 
 h2 {
     color: navy;
     text-align: center;
+    grid-column: 1 / -1;
 }
 
 article p {
@@ -40,5 +44,5 @@ footer {
     margin-top: 1rem;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     font-size: smaller;
-    text-align: right;
+    text-align: left;
 }
