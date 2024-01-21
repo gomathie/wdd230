@@ -7,8 +7,8 @@
     --accent2-color: rgba(233, 229, 229, 0.897);
     --accent3-color: white;
 
-    --heading-font: "Montserrat", "Nunito";
-    --paragraph-font: "Poppins", "Fira-Sans", "Lato";
+    --heading-font: "Montserrat", "Nunito", Verdana;
+    --paragraph-font: "Poppins", "Fira-Sans", "Lato", Arial;
 }
 
 body {
