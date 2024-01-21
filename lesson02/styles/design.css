@@ -9,7 +9,7 @@ footer {
     margin: 0 auto;
 }
 
-marquee {
+div .banner {
     padding: 1rem;
     background-color: #eee;
 }
