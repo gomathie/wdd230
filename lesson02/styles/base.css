@@ -40,6 +40,8 @@ main {
     background-color: var(--secondary-color);
     border-radius: 15px;
     box-sizing: border-box;
+    border-style: solid;
+    color: var(--accent1-color);
 }
 
 .card img {
@@ -65,14 +67,14 @@ footer {
 
 }
 
-/* Responsive styles for medium-sized screens */
+/* medium-sized screens */
 @media (max-width: 800px) {
     main {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Responsive styles for small-sized screens */
+/* small-sized screens */
 @media (max-width: 500px) {
     main {
         grid-template-columns: 1fr;
