@@ -47,11 +47,14 @@ main {
 .card img {
     max-width: 100%;
     height: auto;
+    margin: auto;
 }
 
 .card p {
     text-align: left;
     margin: 10px;
+    font-family: var(--paragraph-font);
+    font-size: 15px;
 }
 
 .card h2 {
