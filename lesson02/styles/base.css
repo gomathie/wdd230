@@ -18,6 +18,7 @@ body {
 
 header {
     background: var(--accent1-color);
+    color: var(--accent3-color);
     padding: 10px;
     display: block;
     align-items: center;
@@ -25,83 +26,40 @@ header {
     width: 100%;
 }
 
-header img {
-    margin-right: 2em;
-    border: solid var(--accent3-color);
-    max-width: 150px;
-    border-radius: 10%;
-    grid-column: 2/3;
-
-}
-
-nav {
-    display: flex;
-    grid-template-columns: 1fr;
-    background: var(--accent2-color);
+header {
+    background-color: var(--accent1-color);
     color: var(--secondary-color);
+    font-family: var(--heading-font);
+    display: grid;
+
+    text-align: center;
     justify-content: center;
-    width: 100%;
-    box-sizing: border-box;
-
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--accent1-color);
-    font-family: var(--paragraph-font);
-    padding: 1em;
-    margin: 10px;
 }
 
 main {
     display: grid;
-    grid-template-columns: 1fr;
-    width: 80%;
-    background: var(--secondary-color);
-    padding: 2rem;
-    margin: 1rem auto;
-}
-
-
-h1 {
-    color: var(--accent3-color);
-    display: inline;
-    vertical-align: 200%;
-    font-family: var(--paragraph-font);
-}
-
-h2 {
-    font-family: var(--heading-font);
-    border-bottom: solid;
-    border-width: 1px;
-    border-color: var(--accent1-color);
-    padding: 0 0 0.5em 0;
-}
-
-h3 {
-    background: var(--accent1-color);
-    color: var(--accent3-color);
-    padding: .5em;
-    margin: 0;
-}
-
-
-.card {
-    width: 100%;
-    border: solid;
-    border-width: 0.5px;
-    border-color: var(--accent1-color);
-    border-radius: .5em;
-    margin: 1rem auto;
-    text-align: center;
-}
-
-ul li {
-    list-style-type: none;
-    margin: 0.5em;
-    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+
 }
+
+main div {
+    border-style: groove;
+    border-radius: var(--rounded-corners);
+    background-color: var(--secondary-color);
+    margin: 5px;
+    max-width: 100%;
+}
+
+
+.class>div {
+    grid-column: span 1;
+}
+
+
 
 footer {
     display: inline-block;
