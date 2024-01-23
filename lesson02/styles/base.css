@@ -52,7 +52,10 @@ main {
 .card p {
     text-align: left;
     margin: 10px;
+}
 
+.card h2 {
+    text-decoration: underline;
 }
 
 
