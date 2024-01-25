@@ -1,5 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color: rgb(233, 235, 135);
+    --secondary-color: rgb(185, 207, 226);
+    --accent1-color: rgb(34, 3, 83);
+    --accent2-color: rgba(233, 229, 229, 0.897);
+    --accent3-color: white;
+
+    --heading-font: "Montserrat", "Nunito", Verdana;
+    --paragraph-font: "Roboto";
+}
+
 body {
-    font-family: Roboto;
+    font-family: var(--paragraph-font);
 }
 
 header,
@@ -7,11 +20,11 @@ main,
 footer {
     max-width: 640px;
     margin: 1rem auto;
-    border-color: lightgrey;
+    border-color: var(--secondary-color);
     border-style: solid;
     border-width: .5px;
     padding: 1rem;
-    background-color: deepskyblue;
+    background-color: var(--primary-color);
 }
 
 main {
@@ -22,5 +35,5 @@ main {
 
 section {
     padding: 1rem;
-    background-color: white;
+    background-color: var(--accent3-color);
 }
