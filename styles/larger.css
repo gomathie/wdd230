@@ -3,12 +3,26 @@
     :root {
         --primary-color: rgb(233, 235, 135);
         --secondary-color: rgb(185, 207, 226);
-        --accent1-color: rgb(34, 3, 83);
+        --accent1-color: #0C2D48;
         --accent2-color: rgba(233, 229, 229, 0.897);
         --accent3-color: white;
 
         --heading-font: "Montserrat", "Nunito", Verdana;
         --paragraph-font: "Poppins", "Fira-Sans", "Lato", Arial;
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
     }
 
     main {
