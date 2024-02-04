@@ -97,7 +97,7 @@ nav a {
     background-color: var(--secondary-color);
     color: #333;
     font-weight: 700;
-    border-radius: 15%;
+    border-radius: 10%;
 }
 
 .open a {
