@@ -52,8 +52,9 @@ nav a {
     color: var(--accent1-color);
     font-family: var(--paragraph-font);
     padding: 1em;
-    margin: 10px;
+    margin: 5px;
 }
+
 
 #menu {
     font-size: 1.5rem;
