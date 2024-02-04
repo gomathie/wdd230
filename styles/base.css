@@ -94,9 +94,10 @@ nav a {
 }
 
 .navigation a:hover {
-    background-color: #bbb;
+    background-color: var(--secondary-color);
     color: #333;
     font-weight: 700;
+    border-radius: 15%;
 }
 
 .open a {
@@ -104,7 +105,7 @@ nav a {
 }
 
 .active::before {
-    content: "";
+    content: "🌐";
 }
 
 
@@ -152,6 +153,13 @@ ul li {
     margin: 0.5em;
     padding: 0;
     text-align: left;
+}
+
+iframe {
+    grid-column: 1/2;
+    width: 100%;
+    border-radius: .5em;
+    border-style: none;
 }
 
 footer {
