@@ -104,6 +104,7 @@ td {
     background-color: #ff4f1f;
     color: black;
     padding: 1em;
+    font-weight: bold;
 }
 
 #navbar {
@@ -127,5 +128,6 @@ footer {
     padding: 1rem;
     text-align: center;
     width: 100%;
+    font-weight: bold;
 
 }
