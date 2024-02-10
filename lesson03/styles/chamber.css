@@ -1,0 +1,122 @@
+:root {
+    --heading-font: "Montserrat", "Calibri", Verdana;
+    --paragraph-font: "Roboto", "Fira-Sans", "Lato", Arial;
+}
+
+header {
+    display: grid;
+    grid-template: auto auto auto / auto auto auto;
+    color: white;
+    background-color: #ff4f1f;
+    text-align: center;
+    font-family: var(--heading-font);
+}
+
+header img {
+    width: 100%;
+    object-fit: cover;
+    grid-column: 1/4;
+    grid-row: 1/4;
+    object-fit: cover;
+    overflow: clip;
+    height: 400px;
+}
+
+header section {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+main {
+    width: 80%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+div {
+    margin: 10px auto;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--heading-font);
+}
+
+p {
+    font-family: var(--paragraph-font);
+
+}
+
+ul {
+    width: fit-content;
+    text-align: left;
+}
+
+img {
+    background-color: #374249;
+    width: 80%;
+    align-items: center;
+    border-style: solid;
+
+}
+
+table {
+    margin: 0 auto;
+    border-style: solid;
+    font-size: 1.5em;
+}
+
+th,
+td {
+    padding: .5em;
+    border-style: none;
+    border-color: darkgrey;
+}
+
+#primary {
+    background-color: #ff4f1f;
+    color: white;
+}
+
+#secondary {
+    background-color: #f19b07;
+    color: white;
+}
+
+#accent1 {
+    background-color: #374249;
+    color: white;
+}
+
+#accent2 {
+    background-color: #000000;
+    color: white;
+}
+
+#canvas {
+    background-color: #ffffff;
+}
+
+.colored {
+    background-color: #ff4f1f;
+    color: white;
+    padding: 1em;
+}
+
+#navbar {
+    background-color: #374249;
+    color: white;
+    display: flex;
+}
+
+#navbar>span {
+    width: 25%;
+    padding: 1em;
+}
+
+#nav_bar_example>span:hover {
+    background-color: #0071C1;
+}
