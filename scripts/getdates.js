@@ -1,7 +1,7 @@
 
 const currentYear = new Date().getFullYear();
-document.getElementById('copyright').textContent = `© ${currentYear} Your Company Name`;
+document.getElementById('currentYear').textContent = `${currentYear}`;
 
 
 const lastModified = document.lastModified;
-document.getElementById('last-modified').textContent = `Last modified: ${lastModifiedDate}`;
+document.getElementById('lastModified').textContent = `Last modified: ${lastModified}`;
