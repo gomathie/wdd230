@@ -9,13 +9,14 @@
     <meta name="description" content="WDD 230 - Web Frontend Development course assignment 
         portal by Mathais Lago. Access projects, resources, and updates 
         for a comprehensive learning experience in web development." />
+    <link rel="stylesheet" href="/styles/base.css">
 
 </head>
 
 <body>
     <header>
-        <h1>Mathias Lago</h1>
         <img src="/images/profile-photo.jpg" alt="profile_pic">
+        <h1>Mathias Lago</h1>
     </header>
     <nav>
         <ul>
@@ -26,8 +27,39 @@
             <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng">Scripture</a></li>
         </ul>
     </nav>
-    <main></main>
-    <footer></footer>
+
+    <main>
+        <h2>WDD 230: Web Frontend Development</h2>
+        <section class="card">
+            <h3>Learning Activities</h3>
+            <ul>
+                <li>01: <a href="lesson01/holygrail.html">Holygrail</a></li>
+                <li>02: <a href="#">Design Principles</a></li>
+                <li>03</li>
+                <li>04</li>
+                <li>05</li>
+                <li>06</li>
+                <li>07</li>
+                <li>08</li>
+                <li>09</li>
+                <li>10</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h3>Information</h3>
+            <p>Weather: </p>
+            <p>Number of Visits: </p>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Mathias Lago, Accra Ghana </p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="/scripts/getdates.js"></script>
 </body>
 
 </html>
