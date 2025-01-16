@@ -42,9 +42,7 @@ nav {
 
 
 
-nav li {
-    margin-bottom: 2em 0em;
-}
+
 
 nav a {
     color: white;
@@ -94,7 +92,7 @@ ul {
 
 footer {
     text-align: center;
-    background-color: #070140;
+    background-color: #032064;
     color: white;
     padding: 1em 0;
 }
