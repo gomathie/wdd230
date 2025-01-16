@@ -102,7 +102,9 @@ footer p {
     display: inline-block;
     width: 20px;
     height: 12px;
+    background-image: url(../images/Ghana-flag.png);
     background-size: cover;
     margin-left: 5px;
     vertical-align: middle;
+
 }
