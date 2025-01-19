@@ -3,7 +3,7 @@
         font-size: 18px;
     }
 
-    header {
+    header nav ul {
         flex-direction: row;
         justify-content: flex-start;
         padding: 2em;
@@ -22,6 +22,10 @@
         margin: 0 1em;
     }
 
+    nav a:hover {
+        text-decoration: underline;
+    }
+
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -34,5 +38,6 @@
 
     .card {
         padding: 2em;
+        margin-bottom: 0;
     }
 }
