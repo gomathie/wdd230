@@ -28,7 +28,7 @@ header img {
 }
 
 header h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin-top: 2em;
     font-size: 1.5rem;
 }
@@ -107,4 +107,19 @@ footer p {
     background-size: cover;
     margin-left: 5px;
     vertical-align: middle;
+}
+
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    .cards {
+        grid-column: 1/2;
+        grid-row: 2;
+    }
 }
