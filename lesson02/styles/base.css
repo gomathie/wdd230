@@ -14,16 +14,22 @@ header {
     padding: 1em 0;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 
 }
 
-h2 {
-    background-color: steelblue;
+
+
+
+.card h2 {
+    background-color: rgb(42, 44, 45);
+    border-radius: 5px;
     color: white;
     padding: 10px;
     font-size: 24px;
 }
+
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -46,8 +52,11 @@ main section {
     background-color: #eee;
 }
 
+
+
 img {
     max-width: 100%;
+    border-radius: 5px;
 }
 
 footer {
