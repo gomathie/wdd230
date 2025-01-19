@@ -34,7 +34,7 @@ header h1 {
 }
 
 nav {
-    background-color: #39031a;
+    background-color: #363033;
     color: white;
     align-items: center;
     text-align: center;
@@ -45,6 +45,7 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 1em 0;
+
 }
 
 nav ul {

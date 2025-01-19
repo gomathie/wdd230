@@ -22,8 +22,11 @@
         margin: 0 1em;
     }
 
+
+
     nav a:hover {
         text-decoration: underline;
+        text-underline-offset: 4px;
     }
 
     main {
