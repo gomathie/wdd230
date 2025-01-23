@@ -1,5 +1,5 @@
 /* For screens larger than 768px (tablet or small desktop) */
-@media (min-width: 768px) {
+@media (min-width: 640px) {
     main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

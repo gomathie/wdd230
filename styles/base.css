@@ -57,6 +57,8 @@ nav ul {
     /* Stack links vertically */
     gap: 10px;
     /* Space between links */
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 

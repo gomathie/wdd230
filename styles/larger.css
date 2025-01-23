@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 640px) {
     body {
         font-size: 18px;
     }
@@ -6,8 +6,10 @@
     header nav ul {
         flex-direction: row;
         justify-content: flex-start;
-        padding: 2em;
+        padding: 0;
+
     }
+
 
     header img {
         margin-right: 2em;
