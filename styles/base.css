@@ -61,6 +61,60 @@ nav ul {
     padding-right: 150px;
 }
 
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #fff;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+    background-color: yellow;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+    color: tomato;
+    font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
+
+.active::before {
+    content: "👉";
+    /*  A wayfinding symbol for the user */
+}
+
+
 
 main {
     max-width: 900px;

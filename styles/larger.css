@@ -25,10 +25,27 @@
     }
 
 
-
     nav a:hover {
         text-decoration: underline;
         text-underline-offset: 4px;
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .stuff {
+        margin: 1rem auto;
     }
 
     main {
