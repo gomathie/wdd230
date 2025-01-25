@@ -57,12 +57,13 @@ nav ul {
     /* Stack links vertically */
     gap: 10px;
     /* Space between links */
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* small view navigation */
 #menu {
+
     font-size: 1.5rem;
     border: 0;
     background: none;
@@ -100,7 +101,7 @@ nav ul {
 
 .navigation a:hover {
     background-color: #bbb;
-    color: tomato;
+    color: rgb(43, 163, 248);
     font-weight: 700;
 }
 
@@ -110,7 +111,12 @@ nav ul {
 }
 
 .active::before {
-    content: "👉";
+    content: "❄️";
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    vertical-align: middle;
+    color: inherit;
+
     /*  A wayfinding symbol for the user */
 }
 
@@ -170,8 +176,10 @@ footer p {
         display: flex;
     }
 
-    nav ul li {
-        flex: 1 1 100%;
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        /* put Links in a horizontal row */
     }
 
     .cards {
