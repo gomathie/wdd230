@@ -59,6 +59,7 @@ nav ul {
     /* Space between links */
     padding-left: 20px;
     padding-right: 20px;
+
 }
 
 /* small view navigation */
@@ -172,10 +173,6 @@ footer p {
 }
 
 @media (min-width: 640px) {
-    nav ul {
-        display: flex;
-    }
-
     nav ul {
         display: flex;
         flex-direction: row;
