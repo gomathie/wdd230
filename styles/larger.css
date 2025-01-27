@@ -7,23 +7,23 @@
         flex-direction: row;
         justify-content: flex-start;
         padding: 0;
-
     }
 
-
     header img {
+        width: 100px;
+        /* Increased image size for larger screens */
         margin-right: 2em;
     }
 
     nav ul {
         flex-direction: row;
+        /* Arrange links horizontally */
         justify-content: center;
     }
 
     nav ul li {
         margin: 0 1em;
     }
-
 
     nav a:hover {
         text-decoration: underline;
@@ -32,7 +32,7 @@
 
     #menu {
         display: none;
-        /* hide hamburger button */
+        /* Hide the hamburger menu button */
     }
 
     .navigation {
@@ -41,25 +41,25 @@
 
     .navigation a {
         display: block;
+        /* Ensure links are always visible for larger screens */
         flex: 1 1 100%;
-    }
-
-    .stuff {
-        margin: 1rem auto;
     }
 
     main {
         display: grid;
         grid-template-columns: 2fr 1fr;
+        /* Adjust grid layout for larger screens */
         gap: 2em;
     }
 
     main h2 {
         grid-column: span 2;
+        /* Center title across grid columns */
     }
 
     .card {
         padding: 2em;
+        /* Add more padding for cards */
         margin-bottom: 0;
     }
 }

@@ -8,6 +8,8 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+    /* Fluid typography added */
 }
 
 header {
@@ -17,14 +19,14 @@ header {
     color: white;
     display: flex;
     justify-content: center;
-
 }
 
 header img {
     border-radius: 10%;
-    width: 100px;
+    width: 80px;
+    /* Reduced size for smaller screens */
     height: auto;
-    margin-right: 2em
+    margin-right: 2em;
 }
 
 header h1 {
@@ -40,12 +42,10 @@ nav {
     text-align: center;
 }
 
-
 nav a {
     color: white;
     text-decoration: none;
     padding: 1em 0;
-
 }
 
 nav ul {
@@ -54,17 +54,15 @@ nav ul {
     margin: 0;
     display: flex;
     flex-direction: column;
-    /* Stack links vertically */
+    /* Stack links vertically for small screens */
     gap: 10px;
     /* Space between links */
     padding-left: 20px;
     padding-right: 20px;
-
 }
 
-/* small view navigation */
+/* Navigation menu button */
 #menu {
-
     font-size: 1.5rem;
     border: 0;
     background: none;
@@ -83,6 +81,7 @@ nav ul {
     background-color: yellow;
 }
 
+/* Default hidden navigation links */
 .navigation {
     display: flex;
     flex-direction: column;
@@ -94,6 +93,7 @@ nav ul {
 
 .navigation a {
     display: none;
+    /* Hide links by default */
     padding: 1rem;
     text-align: center;
     text-decoration: none;
@@ -106,7 +106,7 @@ nav ul {
     font-weight: 700;
 }
 
-/* when the button is clicked - the open class is toggled (added/removed) */
+/* Show links when menu button is clicked */
 .open a {
     display: block;
 }
@@ -117,11 +117,8 @@ nav ul {
     font-size: 1.2rem;
     vertical-align: middle;
     color: inherit;
-
-    /*  A wayfinding symbol for the user */
+    /* A wayfinding symbol for the user */
 }
-
-
 
 main {
     max-width: 900px;
@@ -130,13 +127,13 @@ main {
     background: white;
     display: grid;
     grid-template-columns: 1fr;
+    /* Default to a single column */
     gap: 1.5em;
 }
 
 main h2 {
     text-align: center;
 }
-
 
 .card {
     background-color: #ecf0f1;
@@ -149,6 +146,12 @@ main h2 {
 ul {
     list-style-type: none;
     padding: 0;
+}
+
+/* Ensure iframe is responsive */
+iframe {
+    max-width: 100%;
+    height: auto;
 }
 
 footer {
@@ -170,17 +173,4 @@ footer p {
     background-size: cover;
     margin-left: 5px;
     vertical-align: middle;
-}
-
-@media (min-width: 640px) {
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        /* put Links in a horizontal row */
-    }
-
-    .cards {
-        grid-column: 1/2;
-        grid-row: 2;
-    }
 }
