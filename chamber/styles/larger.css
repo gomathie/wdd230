@@ -1,0 +1,19 @@
+@media (min-width: 768px) {
+    /* Styles for larger screens */
+
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
+    .hero {
+        padding: 120px 0;
+    }
+
+    .hero h1 {
+        font-size: 3.5em;
+    }
+}

@@ -2,7 +2,7 @@
 
 /* Root Variables */
 :root {
-    --primary-color: #032064;
+    --primary-color: #021133;
     /* Dark Blue */
     --accent-color: #FFD700;
     /* Gold */
@@ -17,7 +17,7 @@
 
     /* Navigation */
     --nav-bg: var(--primary-color);
-    --nav-text: #FFFFFF;
+    --nav-text: #021133;
     --nav-hover-bg: var(--accent-color);
     --nav-hover-text: var(--primary-color);
 
@@ -45,35 +45,47 @@ body {
 /* Header Styling */
 header {
     background-color: var(--background-color);
+    /* Ensure this matches your theme */
     color: var(--primary-color);
-    padding: 15px 0;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #e0e0e0;
+    /* Subtle bottom border */
+    position: relative;
+    z-index: 10;
+}
+
+/* Container */
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Logo */
-.logo {
+/* Left Section: Logo */
+.header-left .logo {
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-size: 24px;
+    color: var(--primary-color);
+    font-size: 22px;
     font-weight: bold;
-    color: var(--header-footer-text);
 }
 
-.logo img {
-    width: 50px;
+.header-left .logo img {
+    width: 40px;
     height: auto;
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
-/* Center Navigation */
+/* Center Section: Navigation */
 nav {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    flex: 1;
+    text-align: center;
 }
 
 nav ul {
@@ -81,30 +93,37 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    gap: 30px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: var(--nav-text);
     font-family: var(--heading-font);
-    font-size: 18px;
-    transition: color 0.3s ease;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
     color: var(--nav-hover-bg);
+    border-bottom: 2px solid var(--nav-hover-bg);
+    /* Active indicator */
 }
 
-/* Help Button */
+/* Right Section: Help Button */
 .header-right .help {
     background-color: var(--button-bg);
     color: var(--button-text);
-    padding: 8px 12px;
+    padding: 8px 16px;
     border-radius: 5px;
     text-decoration: none;
+    font-size: 14px;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 .header-right .help:hover {
@@ -112,170 +131,39 @@ nav ul li a:hover {
     color: var(--button-hover-text);
 }
 
-/* Hero Section */
-.hero {
-    background-image: url("hero-image.jpg");
-    background-size: cover;
-    background-position: center;
-    color: var(--header-footer-text);
-    text-align: center;
-    padding: 100px 0;
-}
+/* Responsive Styles */
+@media (max-width: 768px) {
 
-.hero h1 {
-    font-family: var(--heading-font);
-    font-size: 3em;
-    margin-bottom: 20px;
-}
+    /* Adjust header layout for smaller screens */
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-.hero p {
-    font-family: var(--heading-font);
-    font-size: 1.2em;
-    margin-bottom: 40px;
-}
+    nav {
+        width: 100%;
+        margin-top: 10px;
+    }
 
-/* Join Button */
-.join-button {
-    display: inline-block;
-    background-color: var(--button-bg);
-    color: var(--button-text);
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
 
-.join-button:hover {
-    background-color: var(--button-hover-bg);
-    color: var(--button-hover-text);
-}
+    nav ul li a {
+        padding: 10px 0;
+        font-size: 14px;
+    }
 
-/* Events Section */
-.events {
-    padding: 40px 0;
-    text-align: center;
-}
+    .header-right {
+        margin-top: 10px;
+        width: 100%;
+        text-align: right;
+    }
 
-.events h2 {
-    font-family: var(--heading-font);
-    margin-bottom: 40px;
-}
-
-.event-cards {
-    display: flex;
-    justify-content: space-between;
-}
-
-.event-card {
-    width: 30%;
-    border: 1px solid #ccc;
-    padding: 20px;
-    text-align: center;
-}
-
-.event-card img {
-    max-width: 100%;
-    margin-top: 20px;
-}
-
-/* CTA Section */
-.cta {
-    background-color: var(--background-color);
-    padding: 60px 0;
-    text-align: center;
-}
-
-.cta h2 {
-    font-family: var(--heading-font);
-    margin-bottom: 20px;
-}
-
-.cta p {
-    font-family: var(--heading-font);
-    margin-bottom: 40px;
-}
-
-.cta img {
-    max-width: 50%;
-    margin-top: 20px;
-}
-
-/* Footer */
-footer {
-    background-color: var(--header-footer-bg);
-    color: var(--header-footer-text);
-    padding: 40px 0;
-}
-
-.footer-top {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.footer-left {
-    float: left;
-}
-
-.footer-logo img {
-    max-height: 40px;
-}
-
-.footer-middle {
-    text-align: center;
-}
-
-.footer-middle form {
-    display: inline-block;
-}
-
-.footer-middle input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-}
-
-.footer-middle button {
-    background-color: var(--button-bg);
-    color: var(--button-text);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.footer-middle button:hover {
-    background-color: var(--button-hover-bg);
-    color: var(--button-hover-text);
-}
-
-.footer-right {
-    float: right;
-}
-
-.footer-right nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.footer-right nav li {
-    display: inline;
-    margin-left: 20px;
-}
-
-.footer-right nav a {
-    text-decoration: none;
-    color: var(--header-footer-text);
-}
-
-.footer-right nav a:hover {
-    color: var(--nav-hover-bg);
-}
-
-.footer-bottom {
-    text-align: center;
-    font-size: 0.8em;
+    .header-right .help {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
 }
