@@ -96,6 +96,8 @@ nav ul li a.active {
     border-bottom: 2px solid var(--nav-hover-bg);
 }
 
+
+
 /* Help Button */
 .header-right .help {
     background-color: var(--button-bg);
