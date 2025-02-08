@@ -25,7 +25,7 @@
     --button-bg: var(--accent-color);
     --button-text: #000;
     --button-hover-bg: var(--nav-hover-bg);
-    --button-hover-text: var(--nav-hover-text);
+    --button-hover-text: var(--primary-color);
 
     /* Typography */
     --heading-font: 'Roboto', sans-serif;
@@ -45,46 +45,30 @@ body {
 /* Header Styling */
 header {
     background-color: var(--background-color);
-    /* Ensure this matches your theme */
     color: var(--primary-color);
     padding: 15px 20px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border-bottom: 2px solid #e0e0e0;
-    /* Subtle bottom border */
     position: relative;
     z-index: 10;
 }
 
-/* Container */
 .container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Left Section: Logo */
-.header-left .logo {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: var(--primary-color);
-    font-size: 22px;
-    font-weight: bold;
-}
-
-.header-left .logo img {
-    width: 40px;
-    height: auto;
-    margin-right: 8px;
-}
-
 /* Center Section: Navigation */
 nav {
     flex: 1;
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
@@ -93,7 +77,6 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
     gap: 30px;
 }
 
@@ -102,7 +85,7 @@ nav ul li a {
     color: var(--nav-text);
     font-family: var(--heading-font);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
     padding: 5px 10px;
     transition: all 0.3s ease-in-out;
 }
@@ -111,10 +94,9 @@ nav ul li a:hover,
 nav ul li a.active {
     color: var(--nav-hover-bg);
     border-bottom: 2px solid var(--nav-hover-bg);
-    /* Active indicator */
 }
 
-/* Right Section: Help Button */
+/* Help Button */
 .header-right .help {
     background-color: var(--button-bg);
     color: var(--button-text);
@@ -131,39 +113,128 @@ nav ul li a.active {
     color: var(--button-hover-text);
 }
 
-/* Responsive Styles */
+/* Logo */
+.header-left .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.header-left .logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 8px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--header-footer-bg);
+    color: var(--header-footer-text);
+    padding: 20px 0;
+    text-align: center;
+    font-family: var(--body-font);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Footer Top Section */
+.footer-top {
+    margin-bottom: 20px;
+}
+
+.footer-top .logo {
+    text-decoration: none;
+    color: var(--header-footer-text);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-top p {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+/* Footer Middle Section */
+.footer-middle form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.footer-middle input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    flex: 1;
+    max-width: 300px;
+}
+
+.footer-middle button {
+    padding: 10px 20px;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-middle button:hover {
+    background-color: var(--button-hover-bg);
+    color: var(--button-hover-text);
+}
+
+/* Footer Bottom Section */
+.footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.footer-bottom ul li a {
+    text-decoration: none;
+    color: var(--header-footer-text);
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-bottom ul li a:hover {
+    color: var(--accent-color);
+}
+
+.flag {
+    display: inline-block;
+    width: 20px;
+    height: 12px;
+    background-image: url(/images/Ghana-flag.png);
+    background-size: cover;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/* Responsive Footer */
 @media (max-width: 768px) {
-
-    /* Adjust header layout for smaller screens */
-    .container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav {
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    nav ul {
+    .footer-middle form {
         flex-direction: column;
         gap: 10px;
-        align-items: flex-start;
     }
 
-    nav ul li a {
-        padding: 10px 0;
-        font-size: 14px;
-    }
-
-    .header-right {
-        margin-top: 10px;
-        width: 100%;
-        text-align: right;
-    }
-
-    .header-right .help {
-        font-size: 12px;
-        padding: 6px 10px;
+    .footer-bottom ul {
+        flex-direction: column;
+        gap: 10px;
     }
 }
