@@ -12,7 +12,7 @@
         hey also focus on empowering businesses, strengthening community ties, and hosting local events to celebrate the region." />
 
     <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="/styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -22,7 +22,9 @@
     <meta property="og:url" content="https://gomathie.github.io/wdd230/" />
     <meta property="og:image"
         content="https://images.pexels.com/photos/28536810/pexels-photo-28536810/free-photo-of-vibrant-african-market-stall-with-cultural-goods.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
-    <meta property="og:video" content="https://gomathie.github.io/wdd230/" />
+    <meta property="og:video" content="https://www.youtube.com/watch?v=z0iTf6AAD18&pp=ygUMZ2hhbmEgbWFya2V0" />
+    <meta property="og:video:type" content="video/mp4">
+
 
 
 </head>
@@ -98,31 +100,30 @@
 
     </main>
 
-    <footer>
-        <div class="footer-container">
-            <section class="footer-top">
+    <footer class="footer-container">
+
+        <section class="footer-middle">
+            <form>
+                <input type="email" placeholder="Subscribe to our newsletter" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <section class="footer-top">
+            <a href="#" class="logo">Krispol City Chamber Ghana <span class="flag"></span> </a>
+            <p>&copy; <span id="currentYear"></span> Mathias Lago - WDD230 Project </p>
+            <p id="lastModified"></p>
+        </section>
 
 
-                <a href="#" class="logo">Krispol City Chamber</a>
-                <p>&copy; <span id="currentYear"></span> Mathias Lago - Ghana <span class="flag"></span> </p>
-                <p id="lastModified"></p>
-            </section>
 
-            <section class="footer-middle">
-                <form>
-                    <input type="email" placeholder="Subscribe to our newsletter" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </section>
-
-            <section class="footer-bottom">
-                <ul>
-                    <li><a href="#privacy-policy">Privacy Policy</a></li>
-                    <li><a href="#terms">Terms of Service</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </section>
-        </div>
+        <section class="footer-bottom">
+            <ul>
+                <li><a href="#privacy-policy">Privacy Policy</a></li>
+                <li><a href="#terms">Terms of Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </section>
     </footer>
 
 
