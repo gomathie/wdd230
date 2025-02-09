@@ -16,6 +16,20 @@
         font-size: 15px;
     }
 
+    .header-left .logo img {
+        width: 35px;
+        margin-right: 6px;
+    }
+
+    .header-left .logo {
+        font-size: 20px;
+    }
+
+    .header-right .help {
+        font-size: 13px;
+        padding: 7px 12px;
+    }
+
     .hero {
         padding: 80px 0;
     }
@@ -36,62 +50,39 @@
     .event-card {
         width: 48%;
     }
-}
 
-@media (max-width: 1024px) {
-
-    /* Ensure the hamburger menu appears */
-    .hamburger {
-        display: flex;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        background-color: var(--primary-color);
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        text-align: center;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li {
+    .weather {
         padding: 15px;
-        border-bottom: 1px solid #fff;
-        width: 100%;
+        font-size: 16px;
     }
 
-    .nav-links li a {
-        color: white;
-        font-size: 18px;
-        display: block;
-        width: 100%;
-        padding: 10px 0;
-    }
-
-    /* Adjust layout for medium screens */
-    .container {
-        width: 90%;
-        margin: 0 auto;
-        display: flex;
+    .spotlight-item {
         flex-direction: column;
         align-items: center;
-    }
-
-    header {
-        flex-direction: column;
         text-align: center;
     }
 
-    .header-left {
+    footer {
+        padding: 30px 10px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-middle form {
+        width: 100%;
+    }
+
+    .footer-middle input {
+        width: calc(100% - 120px);
+        display: inline-block;
         margin-bottom: 10px;
+    }
+
+    .footer-middle button {
+        width: 100%;
     }
 }
