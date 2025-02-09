@@ -37,3 +37,61 @@
         width: 48%;
     }
 }
+
+@media (max-width: 1024px) {
+
+    /* Ensure the hamburger menu appears */
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--primary-color);
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        padding: 15px;
+        border-bottom: 1px solid #fff;
+        width: 100%;
+    }
+
+    .nav-links li a {
+        color: white;
+        font-size: 18px;
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    /* Adjust layout for medium screens */
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-left {
+        margin-bottom: 10px;
+    }
+}
