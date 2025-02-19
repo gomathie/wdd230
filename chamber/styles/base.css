@@ -186,6 +186,7 @@ img {
     padding: 10px;
     border-radius: 5px;
     text-shadow: 0px 0px 5px white;
+    background: aliceblue;
 }
 
 .hero button,
@@ -240,8 +241,9 @@ button a {
 }
 
 .events .event-cards .event-card h3 {
-    color: var(--accent-color);
-    text-shadow: 1px 1px black;
+    color: var(--primary-color);
+    text-shadow: 1px 1px rgba(255, 255, 0, 0.447);
+
 }
 
 .events h2 {
