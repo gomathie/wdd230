@@ -314,6 +314,23 @@ button a {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.spotlights .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.spotlights .container .spotlight-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* .spotlights .container .spotlight-cards .spotlight-card {
+    max-width: 30%;
+    min-width: 280px;
+} */
+
 .spotlights h2 {
     font-family: var(--heading-font);
     font-size: 28px;
