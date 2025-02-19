@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap");
 
 /* Root Variables */
 :root {
     --primary-color: #021133;
     /* Dark Blue */
-    --accent-color: #FFD700;
+    --accent-color: #ffd700;
     /* Gold */
     --background-color: #f4f4f4;
     /* Light Gray */
@@ -13,7 +13,7 @@
 
     /* Header & Footer */
     --header-footer-bg: var(--primary-color);
-    --header-footer-text: #FFFFFF;
+    --header-footer-text: #ffffff;
 
     /* Navigation */
     --nav-bg: var(--primary-color);
@@ -28,8 +28,8 @@
     --button-hover-text: var(--primary-color);
 
     /* Typography */
-    --heading-font: 'Roboto', sans-serif;
-    --body-font: 'Open Sans', sans-serif;
+    --heading-font: "Roboto", sans-serif;
+    --body-font: "Open Sans", sans-serif;
 }
 
 /* Apply Global Styles */
@@ -131,7 +131,11 @@ nav ul li a.active {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to bottom right, var(--primary-color), var(--accent-color));
+    background: linear-gradient(
+        to bottom right,
+        var(--primary-color),
+        var(--accent-color)
+    );
     color: var(--header-footer-text);
     text-align: center;
     padding: 50px 20px;
@@ -187,16 +191,31 @@ nav ul li a.active {
 .weather {
     background-color: var(--accent-color);
     color: var(--primary-color);
-    padding: 20px;
+    padding: 10px 20px;
     text-align: center;
     border-radius: 8px;
     margin-bottom: 30px;
 }
 
+.weather .container {
+    display: block;
+}
+
+.weather .container .values {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.weather .container .values span {
+    font-weight: bold;
+}
+
 .weather h2 {
     font-family: var(--heading-font);
     font-size: 24px;
-    margin-bottom: 10px;
+    margin: 0;
 }
 
 .weather p {
