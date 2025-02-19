@@ -1,14 +1,15 @@
-// Wait until the webpage is fully loaded before running the script
+// Wait until the webpage is fully loaded before running the script below 
 document.addEventListener("DOMContentLoaded", function () {
 
     // Function to calculate wind chill
     function calculateWindChill(temperature, windSpeed) {
-        // Check if conditions meet the wind chill formula requirements
+        // Check if conditions meet the wind chill formula requirements return Wind chill is not applicable
+
         if (temperature > 50 || windSpeed <= 3.0) {
-            return "N/A"; // Wind chill is not applicable
+            return "N/A";
         }
 
-        // Apply the wind chill formula
+        // Applying the windchill formula
         let windChill = 35.74 + (0.6215 * temperature)
             - (35.75 * Math.pow(windSpeed, 0.16))
             + (0.4275 * temperature * Math.pow(windSpeed, 0.16));
