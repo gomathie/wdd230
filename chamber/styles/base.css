@@ -135,11 +135,6 @@ nav ul li a.active {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(
-        to bottom right,
-        var(--primary-color),
-        var(--accent-color)
-    );
     color: var(--header-footer-text);
     text-align: center;
     /* padding: 50px 20px; */
@@ -193,7 +188,8 @@ img {
     text-shadow: 0px 0px 5px white;
 }
 
-.hero button {
+.hero button,
+button {
     padding: 15px 30px;
     border: none;
     border-radius: 5px;
@@ -201,10 +197,27 @@ img {
     margin-top: 30px;
 }
 
-.hero button a {
+.hero button a,
+button a {
     text-decoration: none;
     color: #000000;
     font-weight: 800;
+}
+
+.cta {
+    padding: 30px 20px;
+}
+
+.cta .container {
+    display: grid;
+    justify-content: center;
+    place-items: center;
+}
+
+.cta .container .values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Events Section */
