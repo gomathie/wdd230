@@ -240,8 +240,9 @@ button a {
 }
 
 .events .event-cards .event-card h3 {
-    color: var(--accent-color);
-    text-shadow: 1px 1px black;
+    color: var(--primary-color);
+    text-shadow: 1px 1px yellow;
+
 }
 
 .events h2 {
