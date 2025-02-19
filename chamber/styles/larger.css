@@ -6,13 +6,24 @@
     header {
         padding: 20px 0;
     }
-
+    /* 
     .hero {
-        padding: 120px 0;
+        position: relative;
     }
+
+    .hero picture {
+
+        position: absolute;
+        top: 0;
+        left: 0;
+    } */
 
     .hero h1 {
         font-size: 3.5em;
+    }
+
+    .hero .container {
+        position: absolute;
     }
 
     .event-cards {
