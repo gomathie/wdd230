@@ -388,6 +388,7 @@ button a {
 
 .gallery {
     grid-area: main;
+    margin: 10px;
 }
 
 .gallery-grid {
@@ -396,6 +397,9 @@ button a {
     /* Responsive columns */
     gap: 20px;
 }
+
+
+
 
 
 /* Footer Styling */
@@ -513,4 +517,7 @@ footer {
             "sidebar"
             "main";
     }
+
+
+
 }

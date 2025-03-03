@@ -6,17 +6,7 @@
     header {
         padding: 20px 0;
     }
-    /* 
-    .hero {
-        position: relative;
-    }
 
-    .hero picture {
-
-        position: absolute;
-        top: 0;
-        left: 0;
-    } */
 
     .hero h1 {
         font-size: 3.5em;
@@ -67,5 +57,18 @@
     .footer-bottom ul {
         display: flex;
         gap: 20px;
+    }
+
+
+    /* dicover gallery - Apply effect only for tablets and larger screens */
+    .gallery-item img {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .gallery-item img:hover {
+        transform: scale(1.1);
+        /* Slight zoom effect */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        /* Add a shadow effect */
     }
 }
