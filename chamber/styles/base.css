@@ -366,6 +366,38 @@ button a {
     color: var(--text-color);
 }
 
+/* Main Section of Discover page  */
+
+.main-container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    /* Adjust widths as needed */
+    grid-template-areas:
+        "sidebar main";
+    gap: 20px;
+}
+
+
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+.gallery {
+    grid-area: main;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Responsive columns */
+    gap: 20px;
+}
+
+
 /* Footer Styling */
 footer {
     background-color: var(--primary-color);
@@ -472,5 +504,13 @@ footer {
     .footer-bottom ul {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .main-container {
+        grid-template-columns: 1fr;
+        /* Single column for mobile */
+        grid-template-areas:
+            "sidebar"
+            "main";
     }
 }
