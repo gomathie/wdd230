@@ -65,3 +65,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+//Display local time
+function updateClock() {
+    const clockElement = document.getElementById("clock");
+    const now = new Date();
+    const timeString = now.toLocaleTimeString(); // Formats the time based on the user's locale
+    clockElement.textContent = timeString;
+}
+
+// Update the clock every second
+setInterval(updateClock, 1000);
+
+// Initialize clock on page load
+updateClock();
+

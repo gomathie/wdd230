@@ -328,10 +328,7 @@ button a {
     flex-wrap: wrap;
 }
 
-/* .spotlights .container .spotlight-cards .spotlight-card {
-    max-width: 30%;
-    min-width: 280px;
-} */
+
 
 .spotlights h2 {
     font-family: var(--heading-font);
@@ -366,7 +363,7 @@ button a {
     color: var(--text-color);
 }
 
-/* Main Section of Discover page  */
+/* Main Section of Discover page  and sidebar*/
 
 .main-container {
     display: grid;
@@ -375,6 +372,42 @@ button a {
     grid-template-areas:
         "sidebar main";
     gap: 20px;
+}
+
+
+.visit-message {
+    opacity: 0;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--accent-color);
+    /* Light background */
+    border: 2px solid var(--primary-color);
+    /* Blue border */
+    text-align: center;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.time-container {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+#clock {
+    color: #910505;
 }
 
 
