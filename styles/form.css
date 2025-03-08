@@ -1,15 +1,13 @@
 :root {
-    --color: #333;
-    --background-color: #f8f8f8;
-    --background-color2: #ddd;
-    --accent-color2: rgb(46, 195, 8);
-
-    --primary-color: #021133;
-    /* Dark Blue */
-    --accent-color: #e20909;
-    /* Gold */
+    --color: #212529;
     --background-color: #f4f4f4;
     /* Light Gray */
+    --background-color2: #ddd;
+    --accent-color: #e20909;
+    --accent-color2: rgb(46, 195, 8);
+    --primary-color: #021133;
+    /* Dark Blue */
+
     --text-color: #212529;
     /* Dark Gray */
 

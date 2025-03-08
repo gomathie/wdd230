@@ -16,20 +16,3 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
-//Main form - Week 8 form assignment
-
-document.getElementById("userForm").addEventListener("submit", function (event) {
-    const password = document.getElementById("password").value;
-    const confirmPassword = document.getElementById("confirmPassword").value;
-    const passwordError = document.getElementById("passwordError");
-
-    if (password !== confirmPassword) {
-        event.preventDefault();
-        passwordError.textContent = "Passwords do not match!";
-        document.getElementById("password").value = "";
-        document.getElementById("confirmPassword").value = "";
-        document.getElementById("password").focus();
-    } else {
-        passwordError.textContent = "";
-    }
-});
