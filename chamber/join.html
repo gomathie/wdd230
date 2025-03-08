@@ -111,18 +111,26 @@
         </aside>
 
         <section class="form">
-            <form method="get" action="thankyou.html" class="joinform">
+            <form method="post" action="thankyou.html" class="joinform">
+                <input type="hidden" name="form_id" value="membership_application">
+
                 <fieldset>
                     <legend>Applicant Information</legend>
                     <label>First Name* <input type="text" id="fname" name="fname" required></label>
+
                     <label>Last Name* <input type="text" id="lname" name="lname" required></label>
+
                     <label>Title or Position* <input type="text" id="title" name="title" pattern="[a-zA-Z -]{7,}"
                             required></label>
+
                     <label>Email* <input type="email" id="email" name="email" placeholder="info@example.com"
                             required></label>
+
                     <label>Phone <input type="tel" id="phone" name="phone" placeholder="1235551234"></label>
+
                     <label>Business/Company Name <input type="text" id="bname" name="bname"
                             placeholder="Company, Limited."></label>
+
                     <label>Company/Business Description <textarea name="description" rows="6" cols="50"
                             placeholder="Please describe your company"></textarea>
                     </label>
@@ -139,7 +147,8 @@
 
                 </fieldset>
 
-                <input type="submit" id="submitButton" value="Subscribe">
+                <button type="submit" id="submitButton">Subscribe Now</button>
+
 
             </form>
         </section>
