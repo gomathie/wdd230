@@ -49,8 +49,100 @@
         </div>
     </header>
 
-    <main>
+    <main class="main-container">
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h2>Membership Information</h2>
+                <h3>Bronze Membership</h3>
+                <h6>GHc2000 each year</h6>
+                <ul>
+                    <li>Exclusive networking opportunities at discounted rates</li>
+                    <li>Access to premier events with special member pricing</li>
+                    <li>Featured in the Chamber newsletter, including member highlights</li>
+                    <li>Involvement in civic initiatives and volunteer programs</li>
+                    <li>Host a ribbon-cutting ceremony or open house event</li>
+                    <li>Official “Proud Member” emblem for email signatures</li>
+                    <li>Visibility in the membership directory to enhance exposure</li>
+                    <li>Biannual recognition on social media platforms</li>
+                    <li>Share company updates in the "Member News" section</li>
+                    <li>Promote business events on the Chamber’s community calendar</li>
+                </ul>
 
+                <h3>Silver Membership</h3>
+                <h6>GHc3500 each year</h6>
+                <ul>
+                    <li>Silver package members will enjoy all benefits included in the bronze package</li>
+                    <li>Reserved entry for two participants in the annual golf tournament</li>
+                    <li>Four exclusive seats at the prestigious Chamber Annual Banquet</li>
+                    <li>Enhanced visibility with dedicated spotlights during major events</li>
+                    <li>Chance to contribute promotional items to VIP swag bags at key gatherings</li>
+                    <li>Exclusive opportunity to showcase your business with a booth at Chamber events</li>
+                    <li>Increased brand recognition through quarterly business spotlights</li>
+                    <li>Special member-only discounts on services, events, and sponsorships</li>
+                </ul>
+
+                <h3>Gold Membership</h3>
+                <h6>GHc5000 each year</h6>
+                <ul>
+                    <li>*Enjoy all exclusive perks from the bronze and silver-level packages</li>
+                    <li>Secure four player spots in the highly anticipated annual golf tournament</li>
+                    <li>Gain premium exposure as a hole sponsor at the Chamber golf tournament</li>
+                    <li>Showcase your brand with a dedicated table and custom signage at the annual banquet</li>
+                    <li>Boost your online presence with a linked company logo featured on the Chamber’s official website
+                    </li>
+                    <li>Receive a dedicated monthly feature across Chamber newsletters, social media, and digital
+                        platforms</li>
+                    <li>Take advantage of exclusive member-only savings on events, sponsorships, and services</li>
+                    <li>Additional promotional opportunities and community engagement initiatives</li>
+                </ul>
+
+                <h3>Non-Profit Membership</h3>
+                <h6>Completely Free – No Cost Involved</h6>
+                <ul>
+                    <li>Gain access to the Chamber of Commerce resource guide, featuring event details, pricing, and key
+                        insights</li>
+                    <li>Enjoy an exclusive annual feature across our social media platforms to boost visibility</li>
+                    <li>Be listed in the Chamber’s official membership directory for networking and exposure</li>
+                    <li>Receive invitations to select Chamber networking events and community initiatives</li>
+                    <li>Opportunities to collaborate on civic engagement and community service projects</li>
+                </ul>
+
+            </div>
+        </aside>
+
+        <section class="form">
+            <form method="get" action="thankyou.html" class="joinform">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label>First Name* <input type="text" id="fname" name="fname" required></label>
+                    <label>Last Name* <input type="text" id="lname" name="lname" required></label>
+                    <label>Title or Position* <input type="text" id="title" name="title" pattern="[a-zA-Z -]{7,}"
+                            required></label>
+                    <label>Email* <input type="email" id="email" name="email" placeholder="info@example.com"
+                            required></label>
+                    <label>Phone <input type="tel" id="phone" name="phone" placeholder="1235551234"></label>
+                    <label>Business/Company Name <input type="text" id="bname" name="bname"
+                            placeholder="Company, Limited."></label>
+                    <label>Company/Business Description <textarea name="description" rows="6" cols="50"
+                            placeholder="Please describe your company"></textarea>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Membership</legend>
+                    <div> Level</div>
+                    <label><input type="radio" name="membership" value="bronze"> Bronze</label>
+                    <label><input type="radio" name="membership" value="silver"> Silver</label>
+                    <label><input type="radio" name="membership" value="gold"> Gold</label>
+                    <label><input type="radio" name="membership" value="nonprofit"> Non-profit</label>
+
+
+                </fieldset>
+
+                <input type="submit" id="submitButton" value="Subscribe">
+
+            </form>
+        </section>
 
 
 
