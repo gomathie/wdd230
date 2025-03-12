@@ -13,12 +13,12 @@
             "lesson": "02",
             "links": [
                 {
-                    "url": "lesson02/media-query.html",
-                    "title": "Media Queries"
+                    "url": "lesson02/design-principles.html",
+                    "title": "Design Principles"
                 },
                 {
-                    "url": "lesson02/design-principles.html",
-                    "title": "Design Principles Document"
+                    "url": "lesson02/media-query.html",
+                    "title": "Media Queries"
                 }
             ]
         },
@@ -28,12 +28,28 @@
                 {
                     "url": "lesson03/chamber-site-plan.html",
                     "title": "Site Plan"
+                },
+                {
+                    "url": "lesson03/images/combinator_exercises_screenshot.png",
+                    "title": "CSS Combinators"
+                },
+                {
+                    "url": "https://codepen.io/Mathie-Lago/pen/YPKRKpW",
+                    "title": "Hamburger Menu"
+                },
+                {
+                    "url": "https://codepen.io/Mathie-Lago/pen/xbKQyMG",
+                    "title": "Pseudo Elements"
                 }
             ]
         },
         {
             "lesson": "04",
             "links": [
+                {
+                    "url": "https://codepen.io/Mathie-Lago/pen/XJrwjom",
+                    "title": "Pseudo Classes"
+                },
                 {
                     "url": "chamber/index.html",
                     "title": "Chamber"
@@ -55,6 +71,10 @@
                 {
                     "url": "lesson06/responsive-images.html",
                     "title": "Responsive Images"
+                },
+                {
+                    "url": "lesson06/images/landscape.webp",
+                    "title": "WebP"
                 }
             ]
         },
@@ -77,6 +97,10 @@
                 {
                     "url": "lesson08/tablebuild.html",
                     "title": "Table Build"
+                },
+                {
+                    "url": "lesson08/Form-start/index.html",
+                    "title": "Form Start"
                 }
             ]
         },
@@ -84,10 +108,18 @@
             "lesson": "09",
             "links": [
                 {
+                    "url": "lesson09/new-ward-members.json",
+                    "title": "New Ward Members JSON"
+                },
+                {
                     "url": "lesson09/prophets.html",
-                    "title": "Dynamic Data"
+                    "title": "Prophets"
                 }
             ]
+        },
+        {
+            "lesson": "10",
+            "links": []
         }
     ]
 }
