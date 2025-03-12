@@ -15,7 +15,7 @@ function displayLinks(weeks) {
         const weekLesson = document.createElement('li');
         weekLesson.textContent = `Lesson ${week.lesson}: `;
 
-        week.links.forEach(link => {
+        week.links.forEach((link, index) => {
             const weeklink = document.createElement("a");
             weeklink.href = baseURL + link.url; //Set the link's URL or Combine the base URL with the link path
             weeklink.textContent = link.title;
