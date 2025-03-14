@@ -5,21 +5,21 @@
             "address": "Accra, Ghana",
             "phone": "+233 24 123 4567",
             "website": "https://accratech.com",
-            "image": "images/accratech.png"
+            "image": "images/Accra.webp"
         },
         {
             "name": "Kumasi Media",
             "address": "Kumasi, Ghana",
             "phone": "+233 20 987 6543",
             "website": "https://kumasimedia.com",
-            "image": "images/kumasimedia.png"
+            "image": "images/Kumasi.webp"
         },
         {
             "name": "Takoradi Innovations",
             "address": "Takoradi, Ghana",
             "phone": "+233 50 876 4321",
             "website": "https://takoradiinnovations.com",
-            "image": "images/takoradi.png"
+            "image": "images/Takoradi.webp"
         },
         {
             "name": "Tamale Digital",

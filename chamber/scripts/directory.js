@@ -1,5 +1,5 @@
 const baseURL = "https://gomathie.github.io/wdd230/";
-const membersURL = "https://gomathie.github.io/wdd230/data/members.json";
+const membersURL = "https://gomathie.github.io/wdd230/chamber/data/members.json";
 
 
 
