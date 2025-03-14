@@ -26,35 +26,35 @@
             "address": "Tamale, Ghana",
             "phone": "+233 27 345 6789",
             "website": "https://tamaledigital.com",
-            "image": "images/tamaledigital.png"
+            "image": "images/chamber-logo.png"
         },
         {
             "name": "Cape Coast Solutions",
             "address": "Cape Coast, Ghana",
             "phone": "+233 26 234 5678",
             "website": "https://capecoastsolutions.com",
-            "image": "images/capecoast.png"
+            "image": "images/capecoast.webp"
         },
         {
             "name": "Ho Tech Hub",
             "address": "Ho, Ghana",
             "phone": "+233 28 789 0123",
             "website": "https://hotechhub.com",
-            "image": "images/hotechhub.png"
+            "image": "images/hotech.webp"
         },
         {
             "name": "Sunyani Startups",
             "address": "Sunyani, Ghana",
             "phone": "+233 55 567 8901",
             "website": "https://sunyani-startups.com",
-            "image": "images/sunyani.png"
+            "image": "images/Sunyani.webp"
         },
         {
             "name": "Bolgatanga Business",
             "address": "Bolgatanga, Ghana",
             "phone": "+233 24 098 7654",
             "website": "https://bolgatangabusiness.com",
-            "image": "images/bolga.png"
+            "image": "images/Bolgatanga.png"
         }
     ]
 }
