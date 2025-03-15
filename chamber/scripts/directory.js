@@ -1,7 +1,11 @@
-const baseURL = "https://gomathie.github.io/wdd230/";
+document.addEventListener("DOMContentLoaded", () => {
+    const directory = document.getElementById("directory");
+    const gridViewBtn = document.getElementById("grid-view");
+    const listViewBtn = document.getElementById("list-view");
+}
+
+    const baseURL = "https://gomathie.github.io/wdd230/";
 const membersURL = "https://gomathie.github.io/wdd230/chamber/data/members.json";
-
-
 
 
 async function loadMembers() {
@@ -10,6 +14,7 @@ async function loadMembers() {
     displayMembers(data.members);
 
 }
+
 
 function displayMembers(members) {
     directory.innerHTML = "";
