@@ -525,46 +525,105 @@ input::placeholder {
 
 
 /* Directory page styling */
+
+h1,
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
 .toggle-buttons button {
     margin: 5px;
     padding: 10px 20px;
     cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
 }
 
-#directory {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.toggle-buttons button:hover {
+    background-color: #e0e0e0;
+}
+
+.toggle-buttons button:active {
+    background-color: #d0d0d0;
+}
+
+/* Grid View Styles (default) */
+#directory.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
     padding: 20px;
 }
 
-.card {
+#directory.grid .card {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
-    margin: 10px;
-    width: 250px;
     text-align: center;
     background: white;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.list .card {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    border-bottom: 1px solid #ccc;
+    flex-direction: column;
+    align-items: center;
 }
 
-.list .card img {
-    width: 50px;
-    height: auto;
-}
-
-.grid .card img {
+#directory.grid .card img {
     width: 100px;
     height: auto;
+    margin-bottom: 15px;
+}
+
+/* List View Styles */
+#directory.list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    max-width: 900px;
+    /* Limit the width */
+    margin: 0 auto;
+    /* Center the list */
+}
+
+#directory.list .card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80px 1fr auto;
+    align-items: center;
+    text-align: left;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+#directory.list .card img {
+    width: 60px;
+    height: auto;
+    grid-row: span 2;
+}
+
+#directory.list .card h3 {
+    grid-column: 2;
+    margin: 0 0 5px 0;
+}
+
+#directory.list .card p {
+    margin: 3px 0;
+    grid-column: 2;
+    /* Specify grid-column to keep paragraphs in the middle column */
+}
+
+#directory.list .card a {
+    grid-column: 3;
+    grid-row: 1 / span 3;
+    /* Make link span all rows */
+    text-align: right;
+    padding-left: 20px;
+    /* Add some space between content and link */
 }
 
 /* Footer Styling */
