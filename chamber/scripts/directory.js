@@ -1,15 +1,12 @@
-const baseURL = "https://gomathie.github.io/wdd230/";
-const membersURL = "https://gomathie.github.io/wdd230/chamber/data/members.json";
-
 document.addEventListener("DOMContentLoaded", () => {
     const directory = document.getElementById("directory");
     const gridViewBtn = document.getElementById("grid-view");
     const listViewBtn = document.getElementById("list-view");
 
-    async function loadMembers() {
-        const response = await fetch(membersURL);
-        const data = await response.json();
-        displayMembers(data.members);
+    function loadMembers() {
+        fetch("data/members.json")
+            .then(response => response.json())
+            .then(data => displayMembers(data));
     }
 
     function displayMembers(members) {
@@ -18,12 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
             const card = document.createElement("div");
             card.classList.add("card");
             card.innerHTML = `
-            <img src="${member.image}" alt="${member.name} Logo">
-            <h3>${member.name}</h3>
-            <p>${member.address}</p>
-            <p>${member.phone}</p>
-            <a href="${member.website}" target="_blank">${member.website}</a>
-        `;
+                <img src="${member.image}" alt="${member.name} Logo">
+                <h3>${member.name}</h3>
+                <p>${member.address}</p>
+                <p>${member.phone}</p>
+                <a href="${member.website}" target="_blank">${member.website}</a>
+            `;
             directory.appendChild(card);
         });
     }
@@ -32,4 +29,4 @@ document.addEventListener("DOMContentLoaded", () => {
     listViewBtn.addEventListener("click", () => directory.className = "list");
 
     loadMembers();
-}); // This closing parenthesis and brace was missing
+});
