@@ -16,6 +16,8 @@ function displayMembers(members) {
     members.forEach(member => {
         const card = document.createElement("div");
         card.classList.add("card");
+
+
         card.innerHTML = `
             <img src="${member.image}" alt="${member.name} Logo">
             <h3>${member.name}</h3>
@@ -46,7 +48,7 @@ gridbutton.addEventListener("click", () => {
     display.classList.remove("list");
 });
 
-listbutton.addEventListener("click", showList); // example using defined function
+listbutton.addEventListener("click", showList);
 
 function showList() {
     display.classList.add("list");
