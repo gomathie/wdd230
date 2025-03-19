@@ -63,8 +63,12 @@
 
         <section class="card">
             <h3>Information</h3>
-            <p>Weather: </p>
-            <p>Number of Visits: </p>
+            <p>Weather: <span id="current-temp"></span></p>
+            <figure class="weatherMap">
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+            <p>Number of Visits: <span class="visits"></span> </p>
         </section>
 
         <iframe
@@ -81,6 +85,8 @@
 
     </footer>
     <script src="scripts/links.js"></script>
+    <script src="scripts/visits.js"></script>
+    <script src="./lesson10/scripts/weather.js"></script>
     <script src="scripts/getdates.js"></script>
 </body>
 
