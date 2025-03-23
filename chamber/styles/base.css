@@ -55,18 +55,7 @@ header {
     z-index: 10;
 }
 
-main {
-    position: relative;
-}
 
-.container {
-    display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 /* Center Section: Navigation */
 nav {
@@ -131,6 +120,19 @@ nav ul li a.active {
     width: 40px;
     height: auto;
     margin-right: 8px;
+}
+
+main {
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Hero Section */

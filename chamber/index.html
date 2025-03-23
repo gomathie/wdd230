@@ -79,36 +79,65 @@
                         Join us for our annual gathering of business leaders and entrepreneurs.
                     </p>
                 </div>
-
-                <div class="event-card">
-                    <h3>Marketing Workshop</h3>
-                    <p>April 15, 2025</p>
-                    <p>
-                        Participate in a hands-on session to learn the latest marketing trends.
-                    </p>
-                </div>
-
-                <div class="event-card">
-                    <h3>Tech Seminar</h3>
-                    <p>July 20, 2025</p>
-                    <p>
-                        Explore the emerging trends in technology and their impact on businesses.
-                    </p>
-                </div>
-
-                <div class="event-card">
-                    <h3>Membership Benefits</h3>
-                    <p>
-                        Unlock exclusive networking opportunities, resources, and business growth strategies by becoming
-                        a member.
-                    </p>
-                </div>
-
                 <button type="button">
                     <a href="./join.html" class="join-button">Join for free</a>
                 </button>
             </div>
+
+
+            <div class="container">
+                <h2>Membership Benefits</h2>
+                <p>
+                    Unlock exclusive networking opportunities, resources, and business growth strategies by becoming
+                    a member.
+                </p>
+                <div class="event-cards">
+                    <div class="event-card">
+                        <h3>Annual Networking Gala</h3>
+                        <p>March 28, 2025</p>
+                        <p>
+                            Join us for our annual gathering of business
+                            leaders and entrepreneurs.
+                        </p>
+                    </div>
+                    <div class="event-card">
+                        <h3>Marketing Workshop</h3>
+                        <p>April 15, 2025</p>
+                        <p>
+                            Participate in a hands-on session to learn the
+                            latest marketing trends.
+                        </p>
+                    </div>
+                    <div class="event-card">
+                        <h3>Tech Seminar</h3>
+                        <p>July 20, 2025</p>
+                        <p>
+                            Explore the emerging trends in technology and
+                            their impact on businesses.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
         </section>
+
+        <section class="weather">
+            <div class="container">
+                <h3>Weather Information</h3>
+                <div class="values">
+                    <p>The Current Temperature in Krispol City, Ghana is: <span id="current-temp"></span></p>
+                    <figure class="weatherMap">
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                    <p>Weather Forecast: <span id="forecast"></span></p>
+                </div>
+
+        </section>
+
 
 
         <section class="events">
@@ -143,23 +172,6 @@
             </div>
         </section>
 
-        <section class="weather">
-            <div class="container">
-                <h2>Current Weather</h2>
-                <div class="values">
-                    <p>
-                        Current Temperature:
-                        <span id="temperature">35</span>°F
-                    </p>
-                    <p>Wind Speed: <span id="windSpeed">10</span>mph</p>
-                    <p>Wind Chill: <span id="windChill">N/A</span></p>
-                </div>
-                <!-- <div class="weather-card">
-                        <h3>Krispol City</h3>
-                        <p>30°C, Sunny | Humidity: 60%</p>
-                    </div> -->
-            </div>
-        </section>
 
         <section class="spotlights">
             <div class="container">
@@ -214,6 +226,7 @@
     </footer>
 
     <script src="./scripts/chamber.js"></script>
+    <script src="./scripts/weather.js"></script>
     <script src="./scripts/windchill.js"></script>
 </body>
 
