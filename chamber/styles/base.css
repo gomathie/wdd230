@@ -135,6 +135,33 @@ main {
     margin: 0 auto;
 }
 
+
+/* homepage banner */
+#meet-and-greet-banner {
+    background-color: #004080;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin: 20px;
+    display: none;
+    /* Initially hidden */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#meet-and-greet-banner button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+
+
 /* Hero Section */
 .hero {
     color: var(--header-footer-text);
@@ -224,11 +251,12 @@ button a {
 }
 
 /* Events Section */
-.events {
-    background-color: #fff;
-    padding: 30px 20px;
-    margin-bottom: 30px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+.events,
+{
+background-color: #fff;
+padding: 30px 20px;
+margin-bottom: 30px;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .events .container {
@@ -276,39 +304,88 @@ button a {
 
 /* Weather Section */
 .weather {
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-    padding: 10px 20px;
-    text-align: center;
-    border-radius: 8px;
-    margin-bottom: 30px;
+    background-color: rgba(254, 254, 8, 0.327);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px var(--primary-color);
 }
 
 .weather .container {
-    display: block;
-}
-
-.weather .container .values {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    margin-top: 15px;
-}
-
-.weather .container .values span {
-    font-weight: bold;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .weather h2 {
-    font-family: var(--heading-font);
-    font-size: 24px;
-    margin: 0;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.weather .values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
 .weather p {
     font-size: 18px;
+    color: #34495e;
     margin: 5px 0;
+    text-align: center;
 }
+
+.weather span {
+    font-weight: bold;
+    color: #3498db;
+}
+
+.weatherMap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.weatherMap img {
+    width: 80px;
+    height: 80px;
+}
+
+.weatherMap figcaption {
+    margin-top: 5px;
+    font-style: italic;
+    color: #7f8c8d;
+    text-transform: capitalize;
+}
+
+/* Forecast styling */
+.forecast-container {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+.forecast-day {
+    display: block;
+    padding: 8px 0;
+    border-bottom: 1px dashed #bdc3c7;
+    text-align: left;
+}
+
+.forecast-day:last-child {
+    border-bottom: none;
+}
+
+
+
+
+
+
 
 /* Business Spotlight Section */
 .spotlights {
