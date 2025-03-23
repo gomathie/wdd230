@@ -251,12 +251,11 @@ button a {
 }
 
 /* Events Section */
-.events,
-{
-background-color: #fff;
-padding: 30px 20px;
-margin-bottom: 30px;
-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+.events {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .events .container {
