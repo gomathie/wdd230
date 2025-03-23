@@ -42,13 +42,69 @@ body {
     padding: 0;
 }
 
+/* Dark Mode Styles */
 body.dark-mode {
     background-color: #121212;
-    color: var(--primary-color);
+    color: white;
 }
 
+/* Text elements */
+body.dark-mode p,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode span,
+body.dark-mode li {
+    color: white;
+}
+
+/* Links */
+body.dark-mode a {
+    color: #80b3ff;
+}
+
+/* Container elements */
+body.dark-mode div,
+body.dark-mode section,
+body.dark-mode article,
+body.dark-mode aside,
+body.dark-mode header,
+body.dark-mode footer,
+body.dark-mode nav,
+body.dark-mode main {
+    background-color: #1e1e1e;
+}
+
+/* Form elements */
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+    background-color: #2d2d2d;
+    color: white;
+    border: 1px solid #444;
+}
+
+body.dark-mode button:not(#dark-mode-toggle) {
+    background-color: #333;
+    color: white;
+    border: 1px solid #444;
+}
+
+/* Dark mode toggle button */
 #dark-mode-toggle {
-    margin: 20px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    font-size: 14px;
 }
 
 /* Header Styling */

@@ -114,45 +114,26 @@
 
         <section class="form">
             <form method="post" action="thankyou.html" class="joinform">
-                <input type="hidden" name="form_id" value="membership_application">
+                <input type="hidden" name="form_id" value="contact_form">
 
                 <fieldset>
-                    <legend>Applicant Information</legend>
+                    <legend>Contact Information</legend>
                     <label>First Name* <input type="text" id="fname" name="fname" required></label>
 
                     <label>Last Name* <input type="text" id="lname" name="lname" required></label>
 
-                    <label>Title or Position* <input type="text" id="title" name="title" pattern="[a-zA-Z -]{7,}"
-                            required></label>
-
                     <label>Email* <input type="email" id="email" name="email" placeholder="info@example.com"
                             required></label>
 
-                    <label>Phone <input type="tel" id="phone" name="phone" placeholder="1235551234"></label>
+                    <label>Phone (optional) <input type="tel" id="phone" name="phone" placeholder="1235551234"></label>
 
-                    <label>Business/Company Name <input type="text" id="bname" name="bname"
-                            placeholder="Company, Limited."></label>
-
-                    <label>Company/Business Description <textarea name="description" rows="6" cols="50"
-                            placeholder="Please describe your company"></textarea>
-                    </label>
+                    <label>Message <textarea name="message" rows="6" cols="50"
+                            placeholder="Type your message here..."></textarea></label>
                 </fieldset>
 
-                <fieldset>
-                    <legend>Membership</legend>
-                    <div> Level</div>
-                    <label><input type="radio" name="membership" value="bronze"> Bronze</label>
-                    <label><input type="radio" name="membership" value="silver"> Silver</label>
-                    <label><input type="radio" name="membership" value="gold"> Gold</label>
-                    <label><input type="radio" name="membership" value="nonprofit"> Non-profit</label>
-
-
-                </fieldset>
-
-                <button type="submit" id="submitButton">Join Now</button>
-
-
+                <button type="submit" id="submitButton">Send Message</button>
             </form>
+
         </section>
 
 

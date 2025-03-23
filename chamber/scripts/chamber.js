@@ -49,3 +49,12 @@ setInterval(updateClock, 1000);
 // Initialize clock on page load
 updateClock();
 
+
+
+//hamburger menu
+
+const menu = document.querySelector(".menu");
+document.querySelector(".hamburger").addEventListener("click", () => {
+    menu.classList.toggle("active");
+
+});
