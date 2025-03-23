@@ -56,22 +56,10 @@
         width: 30%;
     }
 
-    footer {
+    .footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 40px 20px;
-    }
-
-    .footer-middle {
-        flex-grow: 1;
-        display: flex;
-        justify-content: center;
-    }
-
-    .footer-bottom ul {
-        display: flex;
-        gap: 20px;
     }
 
 
