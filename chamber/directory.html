@@ -34,21 +34,25 @@
                     <span>Krispol Chamber</span>
                 </a>
             </div>
-            <nav>
+
+            <button id="dark-mode">🌙 Dark Mode</button>
+
+            <!-- Hamburger Button for Mobile -->
+            <button id="hamburger-button">☰</button>
+
+            <!-- Navigation Menu -->
+            <nav class="menu">
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./discover.html">Discover</a></li>
                     <li><a href="./directory.html">Directory</a></li>
                     <li><a href="./contact.html">Contact Us</a></li>
                 </ul>
+                <div class="header-right">
+                    <a href="#" class="help">? Help</a>
+                </div>
             </nav>
-            <div class="header-right">
-                <a href="#" class="help">? Help</a>
-            </div>
-            <button id="dark-mode-toggle">🌙 Dark Mode</button>
         </div>
-
-
     </header>
 
     <main>
@@ -66,23 +70,25 @@
     </main>
 
     <footer class="footer-container">
-        <section class="footer-middle">
+        <section class="footer-column">
             <form>
                 <input type="email" placeholder="Subscribe to our newsletter" required />
                 <button type="submit">Subscribe</button>
             </form>
         </section>
 
-        <section class="footer-top">
+        <section class="footer-column">
             <a href="#" class="logo">Krispol City Chamber Ghana</a>
             <p>
                 &copy; <span id="currentYear"></span> Mathias Lago - WDD230
                 Project
             </p>
             <p id="lastModified"></p>
+
+
         </section>
 
-        <section class="footer-bottom">
+        <section class="footer-column">
             <ul>
                 <li><a href="#privacy-policy">Privacy Policy</a></li>
                 <li><a href="#terms">Terms of Service</a></li>
@@ -91,7 +97,6 @@
         </section>
     </footer>
 
-    <script src="./scripts/directory.js"></script>
     <script src="./scripts/chamber.js"></script>
     <script src="./scripts/weather.js"></script>
     <script src="./scripts/windchill.js"></script>

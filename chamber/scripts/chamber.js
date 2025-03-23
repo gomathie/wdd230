@@ -1,9 +1,37 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const menuButton = document.querySelector(".hamburger");
-    const navMenu = document.querySelector(".nav-links");
+    const hamburgerButton = document.getElementById("hamburger-button");
+    const navMenu = document.querySelector(".menu");
 
-    menuButton.addEventListener("click", function () {
-        navMenu.classList.toggle("active");
+    if (!hamburgerButton || !navMenu) {
+        console.error("No menu not found! Check your HTML.");
+        return;
+    }
+
+    hamburgerButton.addEventListener("click", function () {
+        navMenu.classList.toggle("open");
+
+        // Change icon when menu opens/closes
+        if (navMenu.classList.contains("open")) {
+            hamburgerButton.textContent = "❌";
+        } else {
+            hamburgerButton.textContent = "☰";
+        }
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener("click", function (event) {
+        if (!navMenu.contains(event.target) && event.target !== hamburgerButton) {
+            navMenu.classList.remove("open");
+            hamburgerButton.textContent = "☰";
+        }
+    });
+
+    // Close menu when clicking a menu link
+    document.querySelectorAll(".menu a").forEach(link => {
+        link.addEventListener("click", function () {
+            navMenu.classList.remove("open");
+            hamburgerButton.textContent = "☰";
+        });
     });
 });
 
@@ -50,11 +78,3 @@ setInterval(updateClock, 1000);
 updateClock();
 
 
-
-//hamburger menu
-
-const menu = document.querySelector(".menu");
-document.querySelector(".hamburger").addEventListener("click", () => {
-    menu.classList.toggle("active");
-
-});

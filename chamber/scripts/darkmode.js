@@ -1,17 +1,23 @@
-const toggleButton = document.getElementById("dark-mode-toggle");
+// Dark mode toggle functionality
+const toggle = document.getElementById("dark-mode");
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
-// Check localStorage for dark mode preference
-if (localStorage.getItem("dark-mode") === "enabled") {
+// Check for saved user preference
+if (localStorage.getItem("darkMode") === "enabled" ||
+    (localStorage.getItem("darkMode") === null && prefersDarkScheme.matches)) {
     document.body.classList.add("dark-mode");
+    toggle.textContent = "🔆 Light Mode";
+} else {
+    toggle.textContent = "🌙 Dark Mode";
 }
 
-// Toggle dark mode and store preference
-toggleButton.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-
-    if (document.body.classList.contains("dark-mode")) {
-        localStorage.setItem("dark-mode", "enabled");
+// Toggle dark mode
+toggle.addEventListener("click", () => {
+    if (document.body.classList.toggle("dark-mode")) {
+        localStorage.setItem("darkMode", "enabled");
+        toggle.textContent = "🔆 Light Mode";
     } else {
-        localStorage.setItem("dark-mode", "disabled");
+        localStorage.setItem("darkMode", "disabled");
+        toggle.textContent = "🌙 Dark Mode";
     }
 });

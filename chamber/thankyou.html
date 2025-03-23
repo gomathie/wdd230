@@ -28,71 +28,76 @@
 
 <body>
     <header>
-        <header>
-            <div class="container">
-                <div class="header-left">
-                    <a href="./index.html" class="logo">
-                        <img src="./images/chamber-logo.png" alt="Chamber Logo" />
-                        <span>Krispol Chamber</span>
-                    </a>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./discover.html">Discover</a></li>
-                        <li><a href="./directory.html">Directory</a></li>
-                        <li><a href="./contact.html">Contact Us</a></li>
-                    </ul>
-                </nav>
+        <div class="container">
+            <div class="header-left">
+                <a href="./index.html" class="logo">
+                    <img src="./images/chamber-logo.png" alt="Chamber Logo" />
+                    <span>Krispol Chamber</span>
+                </a>
+            </div>
+
+            <button id="dark-mode">🌙 Dark Mode</button>
+
+            <!-- Hamburger Button for Mobile -->
+            <button id="hamburger-button">☰</button>
+
+            <!-- Navigation Menu -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./discover.html">Discover</a></li>
+                    <li><a href="./directory.html">Directory</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
                 <div class="header-right">
                     <a href="#" class="help">? Help</a>
                 </div>
-                <button id="dark-mode">🌙 Dark Mode</button>
-            </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <h1>Krispol City Chamber of Commerce</h1>
+        <p>Thanks for applying to join the Krispol City Chamber of Commerce. We will get back to you within a week
+            with
+            a response.</p>
+
+    </main>
+
+    <footer class="footer-container">
+        <section class="footer-column">
+            <form>
+                <input type="email" placeholder="Subscribe to our newsletter" required />
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <section class="footer-column">
+            <a href="#" class="logo">Krispol City Chamber Ghana</a>
+            <p>
+                &copy; <span id="currentYear"></span> Mathias Lago - WDD230
+                Project
+            </p>
+            <p id="lastModified"></p>
 
 
-        </header>
+        </section>
 
-        <main class="main-container">
-            <h1>Krispol City Chamber of Commerce</h1>
-            <p>Thanks for applying to join the Krispol City Chamber of Commerce. We will get back to you within a week
-                with
-                a response.</p>
+        <section class="footer-column">
+            <ul>
+                <li><a href="#privacy-policy">Privacy Policy</a></li>
+                <li><a href="#terms">Terms of Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </section>
+    </footer>
 
-        </main>
-
-        <footer class="footer-container">
-            <section class="footer-middle">
-                <form>
-                    <input type="email" placeholder="Subscribe to our newsletter" required />
-                    <button type="submit">Subscribe</button>
-                </form>
-            </section>
-
-            <section class="footer-top">
-                <a href="#" class="logo">Krispol City Chamber Ghana</a>
-                <p>
-                    &copy; <span id="currentYear"></span> Mathias Lago - WDD230
-                    Project
-                </p>
-                <p id="lastModified"></p>
-            </section>
-
-            <section class="footer-bottom">
-                <ul>
-                    <li><a href="#privacy-policy">Privacy Policy</a></li>
-                    <li><a href="#terms">Terms of Service</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </section>
-        </footer>
-
-        <script src="./scripts/chamber.js"></script>
-        <script src="./scripts/weather.js"></script>
-        <script src="./scripts/windchill.js"></script>
-        <script src="./scripts/banner.js"></script>
-        <script src="./scripts/darkmode.js"></script>
-        <script src="../scripts/getdates.js"></script>
+    <script src="./scripts/chamber.js"></script>
+    <script src="./scripts/weather.js"></script>
+    <script src="./scripts/windchill.js"></script>
+    <script src="./scripts/banner.js"></script>
+    <script src="./scripts/darkmode.js"></script>
+    <script src="../scripts/getdates.js"></script>
 </body>
 
 </html>

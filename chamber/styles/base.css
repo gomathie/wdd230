@@ -42,59 +42,12 @@ body {
     padding: 0;
 }
 
-/* Dark Mode Styles */
 body.dark-mode {
-    background-color: #121212;
+    background-color: var(--primary-color);
     color: white;
 }
 
-/* Text elements */
-body.dark-mode p,
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode h4,
-body.dark-mode h5,
-body.dark-mode h6,
-body.dark-mode span,
-body.dark-mode li {
-    color: white;
-}
-
-/* Links */
-body.dark-mode a {
-    color: #80b3ff;
-}
-
-/* Container elements */
-body.dark-mode div,
-body.dark-mode section,
-body.dark-mode article,
-body.dark-mode aside,
-body.dark-mode header,
-body.dark-mode footer,
-body.dark-mode nav,
-body.dark-mode main {
-    background-color: #1e1e1e;
-}
-
-/* Form elements */
-body.dark-mode input,
-body.dark-mode textarea,
-body.dark-mode select {
-    background-color: #2d2d2d;
-    color: white;
-    border: 1px solid #444;
-}
-
-body.dark-mode button:not(#dark-mode-toggle) {
-    background-color: #333;
-    color: white;
-    border: 1px solid #444;
-}
-
-/* Dark mode toggle button */
-#dark-mode-toggle {
+#dark-mode {
     position: fixed;
     top: 10px;
     right: 10px;
@@ -106,6 +59,39 @@ body.dark-mode button:not(#dark-mode-toggle) {
     color: white;
     font-size: 14px;
 }
+
+/* Hamburger Menu */
+#hamburger-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1001;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 1rem;
+}
+
+
+
+
 
 /* Header Styling */
 header {
@@ -292,7 +278,6 @@ img {
 
 .cta {
     padding: 30px 20px;
-    background-color: gray;
 }
 
 .cta .container {
@@ -924,6 +909,44 @@ footer {
             "main";
     }
 
+    #hamburger-button {
+        display: block;
+    }
 
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 50%;
+        background-color: var(--background-color);
+        flex-direction: column;
+        padding-top: 4rem;
+        transition: right 0.3s ease-in-out;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        display: none;
+        /* Initially hidden */
+    }
+
+    .menu.open {
+        right: 0;
+        display: flex;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu li {
+        margin: 1rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #dark-mode {
+        margin-top: 2rem;
+    }
 
 }
