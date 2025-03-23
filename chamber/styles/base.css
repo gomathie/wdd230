@@ -303,13 +303,16 @@ button a {
 }
 
 /* Weather Section */
-.weather {
-    background-color: rgba(254, 254, 8, 0.327);
+section.weather {
+    background-color: rgba(246, 246, 99, 0.327);
     border-radius: 10px;
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px auto;
     box-shadow: 0 2px 5px var(--primary-color);
+    max-width: 800px;
+    text-align: center;
 }
+
 
 .weather .container {
     max-width: 800px;
