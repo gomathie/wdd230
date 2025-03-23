@@ -90,7 +90,8 @@ nav ul li a.active {
 }
 
 /* Help Button */
-.header-right .help {
+.header-right .help,
+.join-button {
     background-color: var(--button-bg);
     color: var(--button-text);
     padding: 8px 16px;
@@ -209,7 +210,7 @@ img {
 
 .hero p {
     font-size: 22px;
-    margin: 10px 0 0;
+    margin: 10px;
     font-weight: 500;
     color: black;
     padding: 10px;
