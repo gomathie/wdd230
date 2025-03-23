@@ -42,6 +42,15 @@ body {
     padding: 0;
 }
 
+body.dark-mode {
+    background-color: #121212;
+    color: var(--primary-color);
+}
+
+#dark-mode-toggle {
+    margin: 20px;
+}
+
 /* Header Styling */
 header {
     background-color: var(--background-color);
@@ -227,6 +236,7 @@ img {
 
 .cta {
     padding: 30px 20px;
+    background-color: gray;
 }
 
 .cta .container {
@@ -294,7 +304,7 @@ img {
 
 /* Weather Section */
 section.weather {
-    background-color: rgba(246, 246, 99, 0.327);
+    background-color: var(--accent-color);
     border-radius: 10px;
     padding: 20px;
     margin: 20px auto;
@@ -310,7 +320,7 @@ section.weather {
 }
 
 .weather h2 {
-    color: #2c3e50;
+    color: var(--primary-color);
     text-align: center;
     margin-bottom: 20px;
     font-size: 28px;
@@ -327,7 +337,7 @@ section.weather {
 
 .weather p {
     font-size: 18px;
-    color: #34495e;
+    color: var(--primary-color);
     margin: 5px 0;
     text-align: center;
 }
