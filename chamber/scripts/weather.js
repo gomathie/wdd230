@@ -4,7 +4,8 @@ const captionDesc = document.querySelector('figcaption');
 const forecastElement = document.querySelector('#forecast');
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=5.53&lon=0.42&units=imperial&appid=9057c79afc9495bd0a195b55bee48749';
-const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=5.53&lon=0.42&units=imperial&appid=9057c79afc9495bd0a195b55bee48749';
+const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=5.53&lon=0.42&appid=9057c79afc9495bd0a195b55bee48749&units=imperial';
+
 
 async function apiFetch() {
     try {
