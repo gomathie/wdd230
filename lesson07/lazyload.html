@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathias Lago - WDD 230 - Lazy Loading</title>
+    <meta name="author" content="Mathias Lago" />
+    <meta name="description" content="WDD 230 - Web Frontend Development course assignment 
+        portal by Mathais Lago. Access projects, resources, and updates 
+        for a comprehensive learning experience in web development." />
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/lazyload.css">
+
+
+    <meta property="og:title" content="African Loading" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gomathie.github.io/wdd230/" />
+    <meta property="og:image"
+        content="https://images.pexels.com/photos/28536810/pexels-photo-28536810/free-photo-of-vibrant-african-market-stall-with-cultural-goods.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+
+
+
+</head>
+
+<body>
+    <header>
+        <h1>WDD 230 - Lazy Loading </h1>
+    </header>
+    <main>
+        <picture>
+            <img src="https://placebear.com/400/600" alt="Natural photos of bear" loading="lazy" width="400"
+                height="600">
+        </picture>
+        <p>Lazy loading is a technique used in web development and programming that defers the loading of non-critical
+            resources until they are needed, which helps improve webpage load times and overall performance. This means
+            that content, such as images or scripts, will only be rendered when the user scrolls to that part of the
+            page or when the browser requires it.
+            Images are critical for every website and application today. Whether it be marketing banners, product images
+            or logos, it is impossible to imagine a website without images. Sadly though, images are large in size
+            making them the single largest contributor to the page size.
+            Lazy loading images that are not in the viewport improves initial page load performance and user experience.
+            This is an in-depth guide to everything about lazy loading of images including native lazy loading methods.
+
+        </p>
+        <picture>
+            <img src="https://picsum.photos/seed/picsum/400/600" alt="Natural photos" loading="lazy" width="400"
+                height="600">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/400/600" alt="Natural photos" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://loremflickr.com/g/400/600/paris" alt="Natural photos" loading="lazy" width="400"
+                height="600">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/400/600" alt="Natural photos" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="https://picsum.photos/400/600" alt="Natural photos" loading="lazy" width="400" height="600">
+        </picture>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Mathias Lago - Ghana <span class="flag"></span> </p>
+        <p id="lastModified"></p>
+
+    </footer>
+
+    <script src="../scripts/getdates.js"></script>
+
+</body>
+
+</html>
