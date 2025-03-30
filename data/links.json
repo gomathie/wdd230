@@ -1,0 +1,134 @@
+{
+    "lessons": [
+        {
+            "lesson": "01",
+            "links": [
+                {
+                    "url": "lesson01/holygrail.html",
+                    "title": "Holygrail"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "Design Principles"
+                },
+                {
+                    "url": "lesson02/media-query.html",
+                    "title": "Media Queries"
+                }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+                {
+                    "url": "lesson03/chamber-site-plan.html",
+                    "title": "Site Plan"
+                },
+                {
+                    "url": "lesson03/images/combinator_exercises_screenshot.png",
+                    "title": "CSS Combinators"
+                },
+                {
+                    "url": "https://codepen.io/Mathie-Lago/pen/YPKRKpW",
+                    "title": "Hamburger Menu"
+                },
+                {
+                    "url": "https://codepen.io/Mathie-Lago/pen/xbKQyMG",
+                    "title": "Pseudo Elements"
+                }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+                {
+                    "url": "https://codepen.io/Mathie-Lago/pen/XJrwjom",
+                    "title": "Pseudo Classes"
+                },
+                {
+                    "url": "chamber/index.html",
+                    "title": "Chamber"
+                }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+                {
+                    "url": "lesson05/bom.html",
+                    "title": "Book of Mormon"
+                }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+                {
+                    "url": "lesson06/responsive-images.html",
+                    "title": "Responsive Images"
+                },
+                {
+                    "url": "lesson06/images/landscape.webp",
+                    "title": "WebP"
+                }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+                {
+                    "url": "lesson07/lazyload.html",
+                    "title": "Lazy Loading"
+                },
+                {
+                    "url": "lesson07/local-storage.html",
+                    "title": "Local Storage"
+                }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+                {
+                    "url": "lesson08/tablebuild.html",
+                    "title": "Table Build"
+                },
+                {
+                    "url": "lesson08/Form-start/index.html",
+                    "title": "HTML Forms"
+                },
+                {
+                    "url": "form.html",
+                    "title": "Form build"
+                }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+                {
+                    "url": "lesson09/new-ward-members.json",
+                    "title": "New Ward Members JSON"
+                },
+                {
+                    "url": "lesson09/prophets.html",
+                    "title": "Prophets"
+                }
+            ]
+        },
+        {
+            "lesson": "10",
+            "links": [
+                {
+                    "url": "lesson10/weather.html",
+                    "title": "Weather API"
+                }
+            ]
+        }
+    ]
+}
