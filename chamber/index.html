@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krispol City Chamber of Commerce</title>
+    <meta name="author" content="Mathias Lago" />
+    <meta name="description"
+        content="The Krispol City Chamber of Commerce supports local businesses by promoting them, providing education on business-related topics, and advocating for the interests of the community." />
+
+    <link rel="icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/larger.css" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Krispol Chamber" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gomathie.github.io/wdd230/" />
+    <meta property="og:image"
+        content="https://images.pexels.com/photos/30555672/pexels-photo-30555672/free-photo-of-interior-view-of-modern-office-building.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+    <meta property="og:description"
+        content="Discover the Krispol City Chamber of Commerce, supporting local businesses through promotion, education, and advocacy." />
+    <meta property="og:site_name" content="Krispol City Chamber" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-left">
+                <a href="./index.html" class="logo">
+                    <img src="./images/chamber-logo.png" alt="Chamber Logo" />
+                    <span>Krispol Chamber</span>
+                </a>
+            </div>
+
+            <button id="dark-mode">🌙 Dark Mode</button>
+
+            <!-- Hamburger Button for Mobile -->
+            <button id="hamburger-button">☰</button>
+
+            <!-- Navigation Menu -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./discover.html">Discover</a></li>
+                    <li><a href="./directory.html">Directory</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+                <div class="header-right">
+                    <a href="#" class="help">? Help</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="./images/hero-small.webp" />
+                <source media="(max-width: 1000px)" srcset="./images/hero-medium.webp" />
+                <img src="./images/hero-large.webp" alt="Accra Ghana Temple" width="1500" height="1000" />
+            </picture>
+            <div class="container">
+                <h1> Krispol City Chamber of Commerce </h1>
+                <p>
+                    Join a network that champions local entrepreneurship and
+                    innovation.
+                </p>
+                <a href="./join.html" class="join-button">Join for free</a>
+
+
+
+
+
+                <div class="meetbanner" id="meet-and-greet-banner">
+                    <button class="close-btn" onclick="closeBanner()">❌</button>
+                    <h2>You're Invited!</h2>
+                    <p>Join us for the Chamber of Commerce Meet & Greet</p>
+                    <p><strong>Wednesday at 7:00 PM</strong></p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Join Our Chamber Today</h2>
+                <div class="values">
+                    <p>
+                        Join us for our annual gathering of business leaders and entrepreneurs.
+                    </p>
+                </div>
+                <a href="./join.html" class="join-button">Join for free</a>
+
+            </div>
+
+
+            <div class="container">
+                <h2>Membership Benefits</h2>
+                <p>
+                    Unlock exclusive networking opportunities, resources, and business growth strategies by becoming
+                    a member.
+                </p>
+                <div class="event-cards">
+                    <div class="event-card">
+                        <h3>Annual Networking Gala</h3>
+                        <p>March 28, 2025</p>
+                        <p>
+                            Join us for our annual gathering of business
+                            leaders and entrepreneurs.
+                        </p>
+                    </div>
+                    <div class="event-card">
+                        <h3>Marketing Workshop</h3>
+                        <p>April 15, 2025</p>
+                        <p>
+                            Participate in a hands-on session to learn the
+                            latest marketing trends.
+                        </p>
+                    </div>
+                    <div class="event-card">
+                        <h3>Tech Seminar</h3>
+                        <p>July 20, 2025</p>
+                        <p>
+                            Explore the emerging trends in technology and
+                            their impact on businesses.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="weather">
+            <h2>Weather Information</h2>
+            <div class="values">
+                <p>The Current Temperature in Krispol City, Ghana is: <span id="current-temp"></span></p>
+                <figure class="weatherMap">
+                    <img id="weather-icon" src="https://openweathermap.org/img/w/04n.png" alt="Weather icon">
+                    <figcaption></figcaption>
+                </figure>
+                <p>Weather Forecast:</p>
+                <div class="forecast-container" id="forecast">
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="events">
+            <div class="container">
+                <h2>Upcoming Events</h2>
+                <div class="event-cards">
+                    <div class="event-card">
+                        <h3>Annual Networking Gala</h3>
+                        <p>March 28, 2025</p>
+                        <p>
+                            Join us for our annual gathering of business
+                            leaders and entrepreneurs.
+                        </p>
+                    </div>
+
+
+                    <div class="event-card">
+                        <h3>Marketing Workshop</h3>
+                        <p>April 15, 2025</p>
+                        <p>
+                            Participate in a hands-on session to learn the
+                            latest marketing trends.
+                        </p>
+                    </div>
+                    <div class="event-card">
+                        <h3>Tech Seminar</h3>
+                        <p>July 20, 2025</p>
+                        <p>
+                            Explore the emerging trends in technology and
+                            their impact on businesses.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="spotlights">
+            <div class="container">
+                <h2>Featured Businesses</h2>
+                <div class="spotlight-cards">
+                    <div class="spotlight-card">
+                        <h3>ABC Bakery</h3>
+                        <p>Delicious pastries and cakes made with love.</p>
+                    </div>
+                    <div class="spotlight-card">
+                        <h3>Tech Solutions</h3>
+                        <p>
+                            Innovative IT solutions for your business needs.
+                        </p>
+                    </div>
+                    <div class="spotlight-card">
+                        <h3>Green Landscapes</h3>
+                        <p>
+                            Transforming outdoor spaces into beautiful
+                            sanctuaries.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-container">
+        <section class="footer-column">
+            <form>
+                <input type="email" placeholder="Subscribe to our newsletter" required />
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <section class="footer-column">
+            <a href="#" class="logo">Krispol City Chamber Ghana</a>
+            <p>
+                &copy; <span id="currentYear"></span> Mathias Lago - WDD230
+                Project
+            </p>
+            <p id="lastModified"></p>
+
+
+        </section>
+
+        <section class="footer-column">
+            <ul>
+                <li><a href="#privacy-policy">Privacy Policy</a></li>
+                <li><a href="#terms">Terms of Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </section>
+    </footer>
+
+    <script src="./scripts/chamber.js"></script>
+    <script src="./scripts/weather.js"></script>
+    <script src="./scripts/windchill.js"></script>
+    <script src="./scripts/banner.js"></script>
+    <script src="./scripts/darkmode.js"></script>
+    <script src="../scripts/getdates.js"></script>
+</body>
+
+</html>

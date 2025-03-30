@@ -1,0 +1,77 @@
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
+    .join-section {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .join-text {
+        flex: 1;
+    }
+
+    .join-button {
+        flex: 1;
+        text-align: center;
+    }
+
+
+    .hero h1 {
+        font-size: 3.5em;
+    }
+
+    .hero .container {
+        position: absolute;
+    }
+
+    .event-cards {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 25px;
+    }
+
+    .event-card {
+        width: 30%;
+    }
+
+    .weather {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .spotlights {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .spotlight-item {
+        width: 30%;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    /* dicover gallery - Apply effect only for tablets and larger screens */
+    .gallery-item img {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .gallery-item img:hover {
+        transform: scale(1.1);
+        /* Slight zoom effect */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        /* Add a shadow effect */
+    }
+}

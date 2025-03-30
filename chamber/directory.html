@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Directory of Members - Krispol City Chamber of Commerce</title>
+    <meta name="author" content="Mathias Lago" />
+    <meta name="description" content="The Krispol City Chamber of Commerce Directory" />
+
+    <link rel="icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/larger.css" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Krispol Chamber" />
+    <meta property="og:type" content="homepage" />
+    <meta property="og:url" content="https://gomathie.github.io/wdd230/" />
+    <meta property="og:image"
+        content="https://images.pexels.com/photos/28536810/pexels-photo-28536810/free-photo-of-vibrant-african-market-stall-with-cultural-goods.jpeg" />
+    <meta property="og:description"
+        content="Directory of the Krispol City Chamber of Commerce, supporting local businesses through promotion, education, and advocacy." />
+    <meta property="og:site_name" content="Krispol City Directory" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-left">
+                <a href="./index.html" class="logo">
+                    <img src="./images/chamber-logo.png" alt="Chamber Logo" />
+                    <span>Krispol Chamber</span>
+                </a>
+            </div>
+
+            <button id="dark-mode">🌙 Dark Mode</button>
+
+            <!-- Hamburger Button for Mobile -->
+            <button id="hamburger-button">☰</button>
+
+            <!-- Navigation Menu -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./discover.html">Discover</a></li>
+                    <li><a href="./directory.html">Directory</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+                <div class="header-right">
+                    <a href="#" class="help">? Help</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 class=".toggle-buttons">
+            Krispol City Chamber Directory is Empowering
+            Businesses Together
+        </h1>
+        <div class="toggle-buttons">
+            <button id="gridView">Grid View</button>
+            <button id="listView">List View</button>
+        </div>
+
+        <section id="directory" class="grid"></section>
+
+    </main>
+
+    <footer class="footer-container">
+        <section class="footer-column">
+            <form>
+                <input type="email" placeholder="Subscribe to our newsletter" required />
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <section class="footer-column">
+            <a href="#" class="logo">Krispol City Chamber Ghana</a>
+            <p>
+                &copy; <span id="currentYear"></span> Mathias Lago - WDD230
+                Project
+            </p>
+            <p id="lastModified"></p>
+
+
+        </section>
+
+        <section class="footer-column">
+            <ul>
+                <li><a href="#privacy-policy">Privacy Policy</a></li>
+                <li><a href="#terms">Terms of Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </section>
+    </footer>
+
+    <script src="./scripts/chamber.js"></script>
+    <script src="./scripts/weather.js"></script>
+    <script src="./scripts/windchill.js"></script>
+    <script src="./scripts/banner.js"></script>
+    <script src="./scripts/darkmode.js"></script>
+    <script src="../scripts/getdates.js"></script>
+</body>
+
+</html>

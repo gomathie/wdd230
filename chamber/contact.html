@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join the Krispol City Chamber of Commerce</title>
+    <meta name="author" content="Mathias Lago" />
+    <meta name="description" content="A form to help new people join the Krispol City Chamber of Commerce" />
+
+    <link rel="icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/larger.css" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Krispol Chamber" />
+    <meta property="og:type" content="homepage" />
+    <meta property="og:url" content="https://gomathie.github.io/wdd230/" />
+    <meta property="og:image"
+        content="https://images.pexels.com/photos/28536810/pexels-photo-28536810/free-photo-of-vibrant-african-market-stall-with-cultural-goods.jpeg" />
+    <meta property="og:description"
+        content="Discover the Krispol City Chamber of Commerce, supporting local businesses through promotion, education, and advocacy." />
+    <meta property="og:site_name" content="Krispol City Chamber" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-left">
+                <a href="./index.html" class="logo">
+                    <img src="./images/chamber-logo.png" alt="Chamber Logo" />
+                    <span>Krispol Chamber</span>
+                </a>
+            </div>
+
+            <button id="dark-mode">🌙 Dark Mode</button>
+
+            <!-- Hamburger Button for Mobile -->
+            <button id="hamburger-button">☰</button>
+
+            <!-- Navigation Menu -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./discover.html">Discover</a></li>
+                    <li><a href="./directory.html">Directory</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+                <div class="header-right">
+                    <a href="#" class="help">? Help</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h2>Membership Information</h2>
+                <h3>Bronze Membership</h3>
+                <h6>GHc2000 each year</h6>
+                <ul>
+                    <li>Exclusive networking opportunities at discounted rates</li>
+                    <li>Access to premier events with special member pricing</li>
+                    <li>Featured in the Chamber newsletter, including member highlights</li>
+                    <li>Involvement in civic initiatives and volunteer programs</li>
+                    <li>Host a ribbon-cutting ceremony or open house event</li>
+                    <li>Official “Proud Member” emblem for email signatures</li>
+                    <li>Visibility in the membership directory to enhance exposure</li>
+                    <li>Biannual recognition on social media platforms</li>
+                    <li>Share company updates in the "Member News" section</li>
+                    <li>Promote business events on the Chamber’s community calendar</li>
+                </ul>
+
+                <h3>Silver Membership</h3>
+                <h6>GHc3500 each year</h6>
+                <ul>
+                    <li>Silver package members will enjoy all benefits included in the bronze package</li>
+                    <li>Reserved entry for two participants in the annual golf tournament</li>
+                    <li>Four exclusive seats at the prestigious Chamber Annual Banquet</li>
+                    <li>Enhanced visibility with dedicated spotlights during major events</li>
+                    <li>Chance to contribute promotional items to VIP swag bags at key gatherings</li>
+                    <li>Exclusive opportunity to showcase your business with a booth at Chamber events</li>
+                    <li>Increased brand recognition through quarterly business spotlights</li>
+                    <li>Special member-only discounts on services, events, and sponsorships</li>
+                </ul>
+
+                <h3>Gold Membership</h3>
+                <h6>GHc5000 each year</h6>
+                <ul>
+                    <li>*Enjoy all exclusive perks from the bronze and silver-level packages</li>
+                    <li>Secure four player spots in the highly anticipated annual golf tournament</li>
+                    <li>Gain premium exposure as a hole sponsor at the Chamber golf tournament</li>
+                    <li>Showcase your brand with a dedicated table and custom signage at the annual banquet</li>
+                    <li>Boost your online presence with a linked company logo featured on the Chamber’s official website
+                    </li>
+                    <li>Receive a dedicated monthly feature across Chamber newsletters, social media, and digital
+                        platforms</li>
+                    <li>Take advantage of exclusive member-only savings on events, sponsorships, and services</li>
+                    <li>Additional promotional opportunities and community engagement initiatives</li>
+                </ul>
+
+                <h3>Non-Profit Membership</h3>
+                <h6>Completely Free – No Cost Involved</h6>
+                <ul>
+                    <li>Gain access to the Chamber of Commerce resource guide, featuring event details, pricing, and key
+                        insights</li>
+                    <li>Enjoy an exclusive annual feature across our social media platforms to boost visibility</li>
+                    <li>Be listed in the Chamber’s official membership directory for networking and exposure</li>
+                    <li>Receive invitations to select Chamber networking events and community initiatives</li>
+                    <li>Opportunities to collaborate on civic engagement and community service projects</li>
+                </ul>
+
+            </div>
+        </aside>
+
+        <section class="form">
+            <form method="post" action="thankyou.html" class="joinform">
+                <input type="hidden" name="form_id" value="contact_form">
+
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label>First Name* <input type="text" id="fname" name="fname" required></label>
+
+                    <label>Last Name* <input type="text" id="lname" name="lname" required></label>
+
+                    <label>Email* <input type="email" id="email" name="email" placeholder="info@example.com"
+                            required></label>
+
+                    <label>Phone (optional) <input type="tel" id="phone" name="phone" placeholder="1235551234"></label>
+
+                    <label>Message <textarea name="message" rows="6" cols="50"
+                            placeholder="Type your message here..."></textarea></label>
+                </fieldset>
+
+                <button type="submit" id="submitButton">Send Message</button>
+            </form>
+
+        </section>
+
+
+
+
+    </main>
+
+    <footer class="footer-container">
+        <section class="footer-column">
+            <form>
+                <input type="email" placeholder="Subscribe to our newsletter" required />
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <section class="footer-column">
+            <a href="#" class="logo">Krispol City Chamber Ghana</a>
+            <p>
+                &copy; <span id="currentYear"></span> Mathias Lago - WDD230
+                Project
+            </p>
+            <p id="lastModified"></p>
+
+
+        </section>
+
+        <section class="footer-column">
+            <ul>
+                <li><a href="#privacy-policy">Privacy Policy</a></li>
+                <li><a href="#terms">Terms of Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </section>
+    </footer>
+
+    <script src="./scripts/chamber.js"></script>
+    <script src="./scripts/weather.js"></script>
+    <script src="./scripts/windchill.js"></script>
+    <script src="./scripts/banner.js"></script>
+    <script src="./scripts/darkmode.js"></script>
+    <script src="../scripts/getdates.js"></script>
+</body>
+
+</html>

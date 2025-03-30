@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Accra Tech",
+            "address": "Accra, Ghana",
+            "phone": "+233 24 123 4567",
+            "website": "https://accratech.com",
+            "image": "images/Accra.webp"
+        },
+        {
+            "name": "Kumasi Media",
+            "address": "Kumasi, Ghana",
+            "phone": "+233 20 987 6543",
+            "website": "https://kumasimedia.com",
+            "image": "images/Kumasi.webp"
+        },
+        {
+            "name": "Takoradi Innovations",
+            "address": "Takoradi, Ghana",
+            "phone": "+233 50 876 4321",
+            "website": "https://takoradiinnovations.com",
+            "image": "images/Takoradi.webp"
+        },
+        {
+            "name": "Tamale Digital",
+            "address": "Tamale, Ghana",
+            "phone": "+233 27 345 6789",
+            "website": "https://tamaledigital.com",
+            "image": "images/chamber-logo.png"
+        },
+        {
+            "name": "Cape Coast Solutions",
+            "address": "Cape Coast, Ghana",
+            "phone": "+233 26 234 5678",
+            "website": "https://capecoastsolutions.com",
+            "image": "images/capecoast.webp"
+        },
+        {
+            "name": "Ho Tech Hub",
+            "address": "Ho, Ghana",
+            "phone": "+233 28 789 0123",
+            "website": "https://hotechhub.com",
+            "image": "images/hotech.webp"
+        },
+        {
+            "name": "Sunyani Startups",
+            "address": "Sunyani, Ghana",
+            "phone": "+233 55 567 8901",
+            "website": "https://sunyani-startups.com",
+            "image": "images/Sunyani.webp"
+        },
+        {
+            "name": "Bolgatanga Business",
+            "address": "Bolgatanga, Ghana",
+            "phone": "+233 24 098 7654",
+            "website": "https://bolgatangabusiness.com",
+            "image": "images/Bolgatanga.png"
+        }
+    ]
+}

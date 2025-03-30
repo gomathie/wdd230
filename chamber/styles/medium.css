@@ -1,0 +1,103 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 18px 10px;
+    }
+
+    /* Navigation */
+    nav ul {
+        gap: 20px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    .header-left .logo img {
+        width: 35px;
+        margin-right: 6px;
+    }
+
+    .header-left .logo {
+        font-size: 20px;
+    }
+
+    .header-right .help {
+        font-size: 13px;
+        padding: 7px 12px;
+    }
+
+    .hero {
+        /* padding: 80px 0; */
+    }
+
+    .hero h1 {
+        font-size: 2.8em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .event-cards {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .event-card {
+        width: 48%;
+    }
+
+    .weather {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .spotlight-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    /* dicover gallery - Apply effect only for tablets and larger screens */
+    .gallery-item img {
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .gallery-item img:hover {
+        transform: scale(1.1);
+        /* Slight zoom effect */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        /* Add a shadow effect */
+    }
+
+
+
+    footer {
+        padding: 30px 10px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-middle form {
+        width: 100%;
+    }
+
+    .footer-middle input {
+        width: calc(100% - 120px);
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .footer-middle button {
+        width: 100%;
+    }
+}

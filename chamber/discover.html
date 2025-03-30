@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Krispol City Chamber of Commerce</title>
+    <meta name="author" content="Mathias Lago" />
+    <meta name="description"
+        content="The Krispol City Chamber of Commerce supports local businesses by promoting them, providing education on business-related topics, and advocating for the interests of the community." />
+
+    <link rel="icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/larger.css" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Discover Krispol Chamber" />
+    <meta property="og:type" content="discover-gallery page" />
+    <meta property="og:url" content="https://gomathie.github.io/wdd230/" />
+    <meta property="og:image"
+        content="https://images.pexels.com/photos/28536810/pexels-photo-28536810/free-photo-of-vibrant-african-market-stall-with-cultural-goods.jpeg" />
+    <meta property="og:description"
+        content="Discover the Krispol City Chamber of Commerce, supporting local businesses through promotion, education, and advocacy." />
+    <meta property="og:site_name" content="Discover Krispol City Chamber" />
+</head>
+
+<header>
+    <div class="container">
+        <div class="header-left">
+            <a href="./index.html" class="logo">
+                <img src="./images/chamber-logo.png" alt="Chamber Logo" />
+                <span>Krispol Chamber</span>
+            </a>
+        </div>
+
+        <button id="dark-mode">🌙 Dark Mode</button>
+
+        <!-- Hamburger Button for Mobile -->
+        <button id="hamburger-button">☰</button>
+
+        <!-- Navigation Menu -->
+        <nav class="menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./discover.html">Discover</a></li>
+                <li><a href="./directory.html">Directory</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+            <div class="header-right">
+                <a href="#" class="help">? Help</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+</header>
+
+<section class="hero">
+    <picture>
+        <source media="(max-width: 400px)"
+            srcset="https://fastly.picsum.photos/id/88/1280/1707.jpg?hmac=NnkwPVDBTVxHkc4rALB_fyu-OHY2usdm7iRk5El7JC4" />
+        <source media="(max-width: 1000px)"
+            srcset="https://fastly.picsum.photos/id/43/1280/831.jpg?hmac=glK-rQ0ppFClW-lvjk9FqEWKog07XkOxJf6Xg_cU9LI" />
+        <img src="https://fastly.picsum.photos/id/88/1280/1707.jpg?hmac=NnkwPVDBTVxHkc4rALB_fyu-OHY2usdm7iRk5El7JC4"
+            alt="Krispol Chamber image" width="1500" height="500" />
+    </picture>
+    <div class="container">
+        <h1>
+            Krispol City Chamber of Commerce is Empowering
+            Businesses Together
+        </h1>
+        <p>
+            Join a network that champions local entrepreneurship and
+            innovation.
+        </p>
+        <a href="./join.html">
+            <button type="button" class="join-button">Join the Chamber</button>
+        </a>
+    </div>
+</section>
+
+
+<main class="main-container">
+
+    <aside class="sidebar">
+        <div class="sidebar-content">
+            <h2>Discover to Krispol City</h2>
+            <div class="visit-message" id="visitMessage">
+                <!-- Visit message will be inserted here by JavaScript -->
+            </div>
+
+        </div>
+        <div class="time-container">
+            <h4>Local Time</h4>
+            <div id="clock"> </div>
+        </div>
+
+        <div class="sidebar-section">
+            <h3>Community Demographics</h3>
+            <ul>
+                <li>Population: 125,000</li>
+                <li>Businesses: 1,200+</li>
+                <li>Founded: 1892</li>
+                <li>Area: 45 sq miles</li>
+            </ul>
+        </div>
+
+        <div class="sidebar-section">
+            <h3>Upcoming Events</h3>
+            <div class="calendar">
+                <div class="calendar-event">
+                    <span class="date">Mar 15</span>
+                    <span class="title">Business Networking Lunch</span>
+                </div>
+                <div class="calendar-event">
+                    <span class="date">Apr 2</span>
+                    <span class="title">Marketing Workshop</span>
+                </div>
+                <div class="calendar-event">
+                    <span class="date">Apr 18</span>
+                    <span class="title">Tech Expo 2025</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-section">
+            <h3>Local Attractions</h3>
+            <ul>
+                <li>Krispol Cultural Center</li>
+                <li>Riverside Park</li>
+                <li>Heritage Museum</li>
+                <li>Central Market</li>
+                <li>Botanic Gardens</li>
+            </ul>
+        </div>
+
+    </aside>
+
+    <section class="gallery">
+        <h2>Exploring Krispol City</h2>
+        <p class="gallery-intro">Discover the beauty and vibrancy of our community through these local photos.</p>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <picture>
+                    <img src="https://fastly.picsum.photos/id/195/768/1024.jpg?hmac=rksrWrgeGQzOdzXlnzsTWy2L2zYq4gQei3TBMWCmXsI"
+                        alt="Busy market in Krispol City" loading="lazy" width="600" height="400">
+                </picture>
+                <div class="caption">The vibrant Central Market offers local produce, crafts, and a taste of local
+                    culture</div>
+            </div>
+
+            <div class="gallery-item">
+                <picture>
+                    <img src="https://fastly.picsum.photos/id/203/4032/3024.jpg?hmac=yeLnHOEAWUYBtMnanR0-0Q7gSvYbyxPG3PLJYvm170Q"
+                        alt="Riverside Park at sunset" loading="lazy" width="600" height="400">
+                </picture>
+                <div class="caption">Riverside Park provides a peaceful retreat for residents and visitors alike
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <picture>
+                    <img src="https://fastly.picsum.photos/id/192/2352/2352.jpg?hmac=jN5UExysObV7_BrOYLdxoDKzm_c_lRM6QkaInKT_1Go"
+                        alt="Modern business district" loading="lazy" width="600" height="400">
+                </picture>
+                <div class="caption">Our growing business district showcases modern architecture and economic growth
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <picture>
+                    <img src="https://fastly.picsum.photos/id/193/3578/2451.jpg?hmac=M5yoazhwdwMa_27rC5-S50SNFvCy4Kni0wXoa6iVF0g"
+                        alt="Krispol Cultural Center" loading="lazy" width="600" height="400">
+                </picture>
+                <div class="caption">Krispol Cultural Center hosts community events and celebrates our diverse
+                    heritage</div>
+            </div>
+
+            <div class="gallery-item">
+                <picture>
+                    <img src="https://fastly.picsum.photos/id/225/1500/979.jpg?hmac=jvGoek9ng_Y0GaBbzxN0KJhHaiPtk1VfRcukK8R8FxQ"
+                        alt="Popular local cafe" loading="lazy" width="600" height="400">
+                </picture>
+                <div class="caption">Local cafes and restaurants offer cuisine that reflects our rich cultural
+                    diversity</div>
+            </div>
+
+            <div class="gallery-item">
+                <picture>
+                    <img src="https://fastly.picsum.photos/id/221/1440/879.jpg?hmac=-y8GQ4KS-tmCflYwphSLZmsTu-m0rL8U6CldcgLjJoA"
+                        alt="Historic building in Krispol" loading="lazy" width="600" height="400">
+                </picture>
+                <div class="caption">Historic buildings throughout the city preserve our architectural heritage
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <picture>
+                    <img src="https://fastly.picsum.photos/id/289/2800/1508.jpg?hmac=RRpZ65go4XFZxPnHs8RAQG4DJ-Tf-VD61PctWFpwDRc"
+                        alt="Community garden project" loading="lazy" width="600" height="400">
+                </picture>
+                <div class="caption">Community garden initiatives bring residents together while promoting
+                    sustainability</div>
+            </div>
+
+            <div class="gallery-item">
+                <picture>
+                    <img src="https://fastly.picsum.photos/id/452/4096/2722.jpg?hmac=VFr5l8FshPX1LW4DCpHm99QQgWMsHW5Lr70-6ZQZuFg"
+                        alt="Annual street festival" loading="lazy" width="600" height="400">
+                </picture>
+                <div class="caption">Our annual street festival celebrates local music, food, and art</div>
+            </div>
+        </div>
+    </section>
+
+
+</main>
+
+<footer class="footer-container">
+    <section class="footer-column">
+        <form>
+            <input type="email" placeholder="Subscribe to our newsletter" required />
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <section class="footer-column">
+        <a href="#" class="logo">Krispol City Chamber Ghana</a>
+        <p>
+            &copy; <span id="currentYear"></span> Mathias Lago - WDD230
+            Project
+        </p>
+        <p id="lastModified"></p>
+
+
+    </section>
+
+    <section class="footer-column">
+        <ul>
+            <li><a href="#privacy-policy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </section>
+</footer>
+
+<script src="./scripts/chamber.js"></script>
+<script src="./scripts/weather.js"></script>
+<script src="./scripts/windchill.js"></script>
+<script src="./scripts/banner.js"></script>
+<script src="./scripts/darkmode.js"></script>
+<script src="../scripts/getdates.js"></script>
+</body>
+
+</html>
