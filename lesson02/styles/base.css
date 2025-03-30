@@ -1,0 +1,89 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+
+
+header {
+
+    text-align: center;
+    align-items: center;
+    background-color: #032064;
+    padding: 1em 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+
+
+.card h2 {
+    background-color: rgb(42, 44, 45);
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    font-size: 24px;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 16px;
+}
+
+main section {
+    margin: 0.5rem;
+    border: 1px solid #bbb;
+    padding: 0 1rem;
+    background-color: #eee;
+}
+
+
+
+img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: #032064;
+    color: white;
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0.5em 0;
+}
+
+.flag {
+    display: inline-block;
+    width: 20px;
+    height: 12px;
+    background-image: url(/images/Ghana-flag.png);
+    background-size: cover;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+@media (min-width: 640px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
