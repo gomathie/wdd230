@@ -1,0 +1,79 @@
+@media (min-width: 640px) {
+    body {
+        font-size: 18px;
+    }
+
+    header nav ul {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    header img {
+        width: 100px;
+        /* Increased image size for larger screens */
+        margin-right: 2em;
+    }
+
+    nav ul {
+        flex-direction: row;
+        /* Arrange links horizontally */
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 1em;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+
+    #menu {
+        display: none;
+        /* Hide the hamburger menu button */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        /* Ensure links are always visible for larger screens */
+        flex: 1 1 100%;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        /* Adjust grid layout for larger screens */
+        margin: 0 auto;
+    }
+
+    main h2 {
+        grid-column: span 2;
+        margin: 0;
+        /* Center title across grid columns */
+    }
+
+    .hero {
+        grid-column: 1 / 3;
+        width: 100%;
+    }
+
+    .card {
+        padding: 2em;
+        /* Add more padding for cards */
+        margin-bottom: 0;
+    }
+
+    iframe {
+        grid-column: span 2;
+        /* Make the iframe span across both columns */
+        width: 100%;
+        /* Ensure it scales with the container */
+
+    }
+}

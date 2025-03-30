@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathias Lago - WDD 230 - Application Form Page</title>
+    <meta name="author" content="Mathias Lago" />
+    <meta name="description" content="WDD 230 - pplication Form Page by Mathais Lago." />
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <meta property="og:title" content="African Market" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gomathie.github.io/wdd230/" />
+    <meta property="og:image"
+        content="https://images.pexels.com/photos/28536810/pexels-photo-28536810/free-photo-of-vibrant-african-market-stall-with-cultural-goods.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <img src="images/profile-photo.webp" alt="profile-pic">
+        <h1>Mathias Lago</h1>
+    </header>
+
+    <button id="menu"></button>
+    <nav>
+        <ul class="navigation">
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="./chamber/index.html">Chamber</a></li>
+            <li><a href="https://www.byui.edu">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng">Scripture</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <form method="get" action="record.html" class="userForm" id="userForm">
+            <fieldset>
+                <legend>Applicant Information</legend>
+
+                <label>Username* <input type="text" name="usernname" required></label>
+
+                <label for="password">Password* <input type="password" id="password" name="password"
+                        pattern="[A-Za-z0-9]{8,}" placeholder="at least 8 letters & numbers"
+                        title="Password must be at least 8 characters long and contain only letters and numbers."
+                        required></label>
+
+
+                <!-- Confirm Password -->
+                <label for="confirmPassword">Confirm Password* <input type="password" id="confirmPassword"
+                        name="confirmPassword" required></label><span id="passwordError" class="error-message"></span>
+
+                <label>Email* <input type="email" id="email" name="email" placeholder="your byui email address"
+                        title="A valid byui.edu email address." pattern="[a-zA-A0-9.\-]+@byui.edu" required></label>
+
+            </fieldset>
+
+            <label for="rating">Page Rating Input</label>
+            <div id="rangevalue">0</div>
+            <input type="range" id="rating" name="rating" min="0" max="10" value="0" step="1" list="rangevalues">
+            <datalist id="rangevalues">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </datalist>
+
+            <input id="rateButton" type="submit" value="Rate This Page">
+
+        </form>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Mathias Lago - Ghana <span class="flag"></span> </p>
+        <p id="lastModified"></p>
+
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>

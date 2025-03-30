@@ -1,0 +1,76 @@
+:root {
+    --color: #212529;
+    --background-color: #f4f4f4;
+    /* Light Gray */
+    --background-color2: #ddd;
+    --accent-color: #e20909;
+    --accent-color2: rgb(46, 195, 8);
+    --primary-color: #021133;
+    /* Dark Blue */
+
+    --text-color: #212529;
+    /* Dark Gray */
+
+}
+
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+form {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+fieldset {
+    border-radius: 5px;
+
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid var(--background-color2);
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    padding: .3rem;
+}
+
+input::placeholder {
+    font-size: .9rem;
+}
+
+#formmessage {
+    visibility: none;
+    margin: 10px;
+    padding: .5rem;
+    color: var(--accent-color);
+}
+
+#password:invalid {
+    background-color: #f4f5c8;
+
+}
+
+label {
+    display: block;
+    padding: 10px;
+}
+
+.userForm {
+    color: var(--color);
+    text-align: left;
+    margin: 50px 15px 20px;
+}
+
+.userForm input:required {
+    border-bottom: solid 8px var(--accent-color);
+}
+
+.userForm input:required:valid {
+    border-bottom: solid 8px var(--accent-color2);
+}

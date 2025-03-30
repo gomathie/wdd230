@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Pinyon+Script&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+    /* Fluid typography added */
+}
+
+header {
+    text-align: center;
+    background-color: #032064;
+    padding: 1em 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    border-radius: 10%;
+    width: 80px;
+    /* Reduced size for smaller screens */
+    height: auto;
+    margin-right: 2em;
+}
+
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2em;
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color: #363033;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* Stack links vertically for small screens */
+
+}
+
+/* Navigation menu button */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #fff;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+    background-color: yellow;
+}
+
+/* Default hidden navigation links */
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.navigation a {
+    display: none;
+    /* Hide links by default */
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+    color: rgb(43, 163, 248);
+    font-weight: 700;
+}
+
+/* Show links when menu button is clicked */
+.open a {
+    display: block;
+}
+
+.active::before {
+    content: "❄️";
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+    vertical-align: middle;
+    color: inherit;
+    /* A wayfinding symbol for the user */
+}
+
+main {
+    max-width: 960px;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+    width: 100%;
+    margin: 0;
+}
+
+main .h2 {
+    margin: 0;
+}
+
+.hero {
+    position: relative;
+    height: 300px;
+    width: 100%;
+
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.herolabel {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: radial-gradient(#fff, #4D5B97);
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+
+}
+
+.herolabel p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: "Pinyon Script";
+}
+
+
+main h2 {
+    text-align: center;
+}
+
+.card {
+    background-color: #ecf0f1;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Ensure iframe is responsive */
+iframe {
+    max-width: 100%;
+    padding-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #032064;
+    color: white;
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0.5em 0;
+}
+
+.flag {
+    display: inline-block;
+    width: 20px;
+    height: 12px;
+    background-image: url(../images/Ghana-flag.png);
+    background-size: cover;
+    margin-left: 5px;
+    vertical-align: middle;
+}
