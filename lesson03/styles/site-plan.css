@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+:root {
+    --primary-color: #032064;
+    /* Dark Blue */
+    --accent-color: #FFD700;
+    /* Gold */
+    --background-color: #f4f4f4;
+    /* Light Gray */
+    --text-color: #212529;
+    /* Dark Gray for readability */
+    --header-footer-bg: var(--primary-color);
+    --header-footer-text: #FFFFFF;
+    --nav-bg: var(--accent-color);
+    --nav-text: #000;
+    --nav-hover-bg: #FFD700;
+    --nav-hover-text: #032064;
+
+    /* Typography */
+    --heading-font: 'Roboto', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+}
+
+/* General Styles */
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+    font-size: 18px;
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    background-color: var(--header-footer-bg);
+    color: var(--header-footer-text);
+}
+
+header h1,
+header h2 {
+    color: var(--header-footer-text);
+}
+
+p {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    padding: 1em;
+}
+
+/* Remove bullet points from lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: var(--nav-bg);
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+nav a {
+    color: var(--nav-text);
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-bg);
+    color: var(--nav-hover-text);
+}
+
+/* Color Schema Section */
+.colors {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.colors div {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #ccc;
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+
+.accent {
+    background-color: var(--accent-color);
+}
+
+.background {
+    background-color: var(--background-color);
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.accent-color {
+    color: var(--accent-color);
+}
+
+.background-color {
+    color: var(--background-color);
+}
+
+.text-color {
+    color: var(--text-color);
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--header-footer-bg);
+    color: var(--header-footer-text) !important;
+    padding: 1em;
+    text-align: center;
+}
+
+footer p {
+    color: #FFFFFF;
+}
