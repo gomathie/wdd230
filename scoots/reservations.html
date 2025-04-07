@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Scoots~ Motor Scooter Rentals | Cozumel, Mexico</title>
+    <link rel="stylesheet" href="/scoots/styles/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Weather Alert Banner -->
+    <div id="weather-alert" class="weather-alert">
+        <p>Today's high temperature: <span id="temp-max">Loading...</span>°C</p>
+        <button id="close-alert" aria-label="Close alert">×</button>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <img src="images/scoots-logo.png" alt="Scoots Logo" class="logo">
+            <h1>Scoots</h1>
+        </div>
+        <nav>
+            <button class="hamburger" aria-label="Menu">☰</button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main class="reservations-page">
+        <h2>Make Your Reservation</h2>
+
+        <!-- Rental Agreement Section -->
+        <section class="rental-agreement">
+            <h3>Rental Agreement Information</h3>
+            <div class="agreement-content">
+                <h4>Requirements to Rent</h4>
+                <ul>
+                    <li>Valid driver's license</li>
+                    <li>Major credit card</li>
+                    <li>Minimum age: 18 for scooters, 21 for Jeeps and ATVs</li>
+                    <li>Liability insurance included</li>
+                    <li>Security deposit required on site</li>
+                </ul>
+
+                <h4>Rental Policies</h4>
+                <ul>
+                    <li>Fuel policy: Return with same fuel level</li>
+                    <li>Cancellations: Free up to 24 hours before rental time</li>
+                    <li>Late returns: Additional hourly charge applies</li>
+                    <li>Damage policy: Renter responsible for damages beyond normal wear and tear</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- Reservation Form -->
+        <section class="reservation-form-section">
+            <h3>Reservation Form</h3>
+            <form id="reservation-form" class="reservation-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="rental-date">Rental Date</label>
+                        <input type="date" id="rental-date" name="rental-date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rental-period">Rental Period</label>
+                        <select id="rental-period" name="rental-period" required>
+                            <option value="">Select Period</option>
+                            <option value="half-day">Half Day (3 hours)</option>
+                            <option value="full-day">Full Day</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rental-type">Rental Type</label>
+                        <select id="rental-type" name="rental-type" required>
+                            <option value="">Select Vehicle Type</option>
+                            <option value="scooter">Motor Scooter</option>
+                            <option value="jeep">Jeep</option>
+                            <option value="atv">Side-by-Side ATV</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="rental-quantity">Number of Vehicles</label>
+                        <input type="number" id="rental-quantity" name="rental-quantity" min="1" max="5" value="1"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customer-name">Full Name</label>
+                        <input type="text" id="customer-name" name="customer-name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customer-email">Email Address</label>
+                        <input type="email" id="customer-email" name="customer-email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customer-phone">Phone Number</label>
+                        <input type="tel" id="customer-phone" name="customer-phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="customer-location">Home State/Country</label>
+                        <input type="text" id="customer-location" name="customer-location" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cruise-line">Cruise Line (if applicable)</label>
+                        <input type="text" id="cruise-line" name="cruise-line">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="special-requests">Special Accommodations/Comments</label>
+                        <textarea id="special-requests" name="special-requests" rows="4"
+                            placeholder="Include any drop-off requests or other special needs"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-button">Submit Reservation</button>
+                    <button type="reset" class="reset-button">Clear Form</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/scoots-logo-small.png" alt="Scoots Logo" class="logo-small">
+                <h3>~Scoots~</h3>
+            </div>
+
+            <div class="footer-contact">
+                <p><i class="fas fa-map-marker-alt"></i> Cozumel, Mexico</p>
+                <p><i class="fas fa-phone"></i> +52 987 555 1234</p>
+                <p><i class="fas fa-envelope"></i> info@scootsrentals.com</p>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 ~Scoots~ Motor Rentals. All Rights Reserved.</p>
+            <p>Website designed by [Your Name]</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/weather.js"></script>
+    <script src="js/rentals.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
