@@ -4,9 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>~Scoots~ Motor Scooter Rentals | Cozumel, Mexico</title>
+    <title>Scoots Motor Scooter Rentals | Cozumel, Mexico</title>
+    <meta name="author" content="Mathias Lago" />
+    <meta name="description"
+        content="Scoots motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea.
+         This owner-operator company caters to locals, walk-in tourists, motor scooter enthusiasts, and cruise-based touring groups and partnerships" />
+
+
+    <link rel="icon" href="./images/favicon.png" />
+    <link rel="stylesheet" href="../styles/normalize.css" />
     <link rel="stylesheet" href="/scoots/styles/base.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Scoots Motor Scooter Rentals - Cozumel" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.com/" />
+    <meta property="og:image"
+        content="https://images.pexels.com/photos/28932608/pexels-photo-28932608/free-photo-of-thrilling-desert-ride-with-dune-buggy-adventure.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+    <meta property="og:description"
+        content="Explore Cozumel in style with Scoots. Rent scooters, ATVs, and Jeeps from our two convenient island locations. Adventure made easy!" />
+    <meta property="og:site_name" content="Scoots Motor Scooter Rental" />
+
+
+
+
 </head>
 
 <body>
@@ -16,10 +39,10 @@
         <button id="close-alert" aria-label="Close alert">×</button>
     </div>
 
-    <!-- Header -->
+
     <header>
         <div class="logo-container">
-            <img src="images/scoots-logo.png" alt="Scoots Logo" class="logo">
+            <img src="./images/scoots-logo.png" alt="Scoots Logo" class="logo">
             <h1>Scoots</h1>
         </div>
         <nav>
@@ -35,8 +58,13 @@
 
     <!-- Main Content - Home Page -->
     <main class="home-page">
-        <!-- Hero Section -->
+        <!-- Banner Section -->
         <section class="hero">
+            <picture>
+                <source media="(max-width: 400px)" srcset="./images/hero-small.webp" />
+                <source media="(max-width: 1000px)" srcset="./images/hero-medium.webp" />
+                <img src="./images/hero-large.webp" alt="Accra Ghana Temple" width="1500" height="800" />
+            </picture>
             <div class="hero-content">
                 <h2>Explore Cozumel Your Way</h2>
                 <p>Discover the beauty of Cozumel with our convenient and affordable rentals</p>
@@ -67,24 +95,24 @@
             </div>
         </section>
 
-        <!-- Rental Summary Section -->
+        <!-- Rental Options -->
         <section class="rental-summary">
             <h2>Our Rental Options</h2>
             <div class="rental-cards">
                 <div class="rental-card">
-                    <img src="images/scooter.jpg" alt="Motor Scooter">
+                    <img src="./images/scooter.webp" alt="Motor Scooter">
                     <h3>Motor Scooters</h3>
                     <p>Perfect for solo travelers or couples looking to zip around the island.</p>
                     <a href="rentals.html#scooters">See Options</a>
                 </div>
                 <div class="rental-card">
-                    <img src="images/jeep.jpg" alt="Jeep">
+                    <img src="./images/jeep.webp" alt="Jeep">
                     <h3>Jeeps</h3>
                     <p>Ideal for families or groups wanting to explore the rugged terrain.</p>
                     <a href="rentals.html#jeeps">See Options</a>
                 </div>
                 <div class="rental-card">
-                    <img src="images/atv.jpg" alt="ATV">
+                    <img src="./images/atv.webp" alt="ATV">
                     <h3>Side-by-Side ATVs</h3>
                     <p>For the adventurous souls seeking to discover hidden trails.</p>
                     <a href="rentals.html#atvs">See Options</a>
@@ -116,8 +144,8 @@
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="images/scoots-logo-small.png" alt="Scoots Logo" class="logo-small">
-                <h3>~Scoots~</h3>
+                <img src="./images/scoots-logo.png" alt="Scoots Logo" class="logo-small">
+                <h3>Scoots</h3>
             </div>
 
             <div class="footer-contact">
@@ -129,17 +157,29 @@
             <div class="footer-social">
                 <h4>Follow Us</h4>
                 <div class="social-icons">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/" aria-label="Facebook">
+                        <img src="./images/facebook-30.png" alt="Facebook Icon">
+                    </a>
+                    <a href="https://www.Instagram.com/" aria-label="Instagram">
+                        <img src="./images/instagram-30.png" alt="Instagram Icon">
+                    </a>
+                    <a href="https://www.TikTok.com/" aria-label="TikTok">
+                        <img src="./images/tiktok-30.png" alt="TikTok Icon">
+                    </a>
+                    <a href="https://www.YouTube.com/" aria-label="YouTube">
+                        <img src="./images/youtube-30.png" alt="YouTube Icon">
+                    </a>
                 </div>
             </div>
+
+
+
+
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2025 ~Scoots~ Motor Rentals. All Rights Reserved.</p>
-            <p>Website designed by [Your Name]</p>
+            <p>&copy; 2025 Scoots Motor Rentals. All Rights Reserved.</p>
+            <p>Website designed by Mathias Lago</p>
         </div>
     </footer>
 
