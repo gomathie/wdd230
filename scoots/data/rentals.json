@@ -1,0 +1,52 @@
+{
+    "rentalTypes": [
+        {
+            "type": "Honda Metro Scooter",
+            "category": "scooter",
+            "maxPersons": 1,
+            "halfDay": 20,
+            "fullDay": 30,
+            "description": "Compact and efficient 49cc scooter perfect for solo exploration."
+        },
+        {
+            "type": "Honda Dio Scooter",
+            "category": "scooter",
+            "maxPersons": 2,
+            "halfDay": 30,
+            "fullDay": 40,
+            "description": "Reliable 110cc scooter with room for two."
+        },
+        {
+            "type": "Honda PCX150 Scooter",
+            "category": "scooter",
+            "maxPersons": 2,
+            "halfDay": 40,
+            "fullDay": 50,
+            "description": "Powerful 150cc scooter with enhanced comfort and storage."
+        },
+        {
+            "type": "Honda Pioneer ATV",
+            "category": "atv",
+            "maxPersons": 4,
+            "halfDay": 50,
+            "fullDay": 70,
+            "description": "Rugged side-by-side ATV that seats up to 4 passengers."
+        },
+        {
+            "type": "Jeep Wrangler - 2 door",
+            "category": "jeep",
+            "maxPersons": 4,
+            "halfDay": 60,
+            "fullDay": 85,
+            "description": "Iconic 2-door Jeep perfect for adventure seekers."
+        },
+        {
+            "type": "Jeep Wrangler - 4 door with a/c",
+            "category": "jeep",
+            "maxPersons": 5,
+            "halfDay": 70,
+            "fullDay": 100,
+            "description": "Spacious 4-door Jeep with air conditioning for maximum comfort."
+        }
+    ]
+}

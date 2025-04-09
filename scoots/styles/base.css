@@ -243,7 +243,8 @@ img {
     border-radius: var(--border-radius);
 }
 
-.weather-section h2 {
+.weather-section h2,
+h3 {
     color: white;
     text-align: center;
     margin-bottom: 1.5rem;
