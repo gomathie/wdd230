@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     async function loadRentalData() {
         try {
-            const response = await fetch('./data/rentals.json');
+            const response = await fetch('https://github.com/gomathie/wdd230/blob/main/scoots/data/rentals.json');
             const data = await response.json();
 
             if (data && data.rentalTypes) {
