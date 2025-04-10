@@ -4,16 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>~Scoots~ Motor Scooter Rentals | Cozumel, Mexico</title>
-    <link rel="stylesheet" href="/scoots/styles/base.css">
+    <title>Scoots Motor Scooter Rentals | Cozumel, Mexico</title>
+    <meta name="author" content="Mathias Lago" />
+    <meta name="description"
+        content="Scoots motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea.
+         This owner-operator company caters to locals, walk-in tourists, motor scooter enthusiasts, and cruise-based touring groups and partnerships" />
+
+
+    <link rel="icon" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/larger.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Scoots Motor Scooter Rentals - Cozumel" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gomathie.github.io/wdd230/scoots/" />
+    <meta property="og:image"
+        content="https://images.pexels.com/photos/28932608/pexels-photo-28932608/free-photo-of-thrilling-desert-ride-with-dune-buggy-adventure.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
+    <meta property="og:description"
+        content="Explore Cozumel in style with Scoots. Rent scooters, ATVs, and Jeeps from our two convenient island locations. Adventure made easy!" />
+    <meta property="og:site_name" content="Scoots Motor Scooter Rental" />
+
 </head>
 
 <body>
     <!-- Weather Alert Banner -->
     <div id="weather-alert" class="weather-alert">
         <p>Today's high temperature: <span id="temp-max">Loading...</span>°C</p>
-        <button id="close-alert" aria-label="Close alert">❌</button>
+        <button id="close-alert" aria-label="Close alert">x</button>
     </div>
 
     <!-- Header -->
@@ -220,7 +242,6 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="./scripts/weather.js"></script>
     <script src="./scripts/scoots.js"></script>
     <script src="./scripts/rental.js"></script>
