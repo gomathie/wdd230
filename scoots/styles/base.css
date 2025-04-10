@@ -323,11 +323,12 @@ h3 {
 .rental-card p {
     padding: 0 1rem;
     margin-bottom: 1rem;
+    color: var(--secondary-color);
 }
 
 .rental-card a {
     display: inline-block;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     font-weight: bold;
     margin-bottom: 1rem;
     border-bottom: 2px solid transparent;
@@ -448,6 +449,29 @@ h3 {
     left: 0;
     top: -0.5rem;
 }
+
+
+.rental-detail-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: flex-start;
+    border: var(--secondary-color) solid;
+    border-radius: 1cap;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.rental-detail-flex img {
+    max-width: 100%;
+    width: 300px;
+    /* or a size that fits your layout */
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 8px;
+    /* optional: gives it smooth edges */
+}
+
 
 /* Rental Services Section */
 .rental-services {
@@ -848,17 +872,6 @@ footer {
     }
 
 
-    .rental-detail-flex {
-        flex-direction: column;
-    }
-
-    .rental-detail-flex img {
-        margin-bottom: 1.5rem;
-    }
-
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
 
 
     .rental-table {
