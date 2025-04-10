@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Function to fetch current weather
     async function fetchCurrentWeather() {
         try {
-            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=20.4&lon=86.9&units=imperial&appid=9057c79afc9495bd0a195b55bee48749`);
+            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=20.4&lon=-86.9&units=imperial&appid=9057c79afc9495bd0a195b55bee48749`);
             const data = await response.json();
 
             // Update current weather display
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Function to fetch forecast for tomorrow at 15:00
     async function fetchForecast() {
         try {
-            const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=20.4&lon=86.9&appid=9057c79afc9495bd0a195b55bee48749&units=imperial`);
+            const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=20.4&lon=-86.9&appid=9057c79afc9495bd0a195b55bee48749&units=imperial`);
             const data = await response.json();
 
             if (data && data.list) {
