@@ -1,52 +1,109 @@
 {
     "rentalTypes": [
         {
-            "type": "Honda Metro Scooter",
+            "type": "~Honda Metro Scooter",
             "category": "scooter",
             "maxPersons": 1,
-            "halfDay": 20,
-            "fullDay": 30,
-            "description": "Compact and efficient 49cc scooter perfect for solo exploration."
+            "reservationHalfDay": 20,
+            "reservationFullDay": 30,
+            "walkInHalfDay": 25,
+            "walkInFullDay": 35,
+            "details": {
+                "model": "Honda Metropolitan (49cc)",
+                "description": "Compact and efficient scooter perfect for solo exploration."
+            }
         },
         {
-            "type": "Honda Dio Scooter",
+            "type": "~Honda Dio Scooter",
             "category": "scooter",
             "maxPersons": 2,
-            "halfDay": 30,
-            "fullDay": 40,
-            "description": "Reliable 110cc scooter with room for two."
+            "reservationHalfDay": 30,
+            "reservationFullDay": 40,
+            "walkInHalfDay": 35,
+            "walkInFullDay": 45,
+            "details": {
+                "model": "Honda Dio (110cc)",
+                "description": "Reliable scooter with room for two."
+            }
         },
         {
-            "type": "Honda PCX150 Scooter",
+            "type": "~Honda PCX150 Scooter",
             "category": "scooter",
             "maxPersons": 2,
-            "halfDay": 40,
-            "fullDay": 50,
-            "description": "Powerful 150cc scooter with enhanced comfort and storage."
+            "reservationHalfDay": 40,
+            "reservationFullDay": 50,
+            "walkInHalfDay": 45,
+            "walkInFullDay": 55,
+            "details": {
+                "model": "Honda PCX150 (149cc)",
+                "description": "Powerful scooter with enhanced comfort and storage."
+            }
         },
         {
             "type": "Honda Pioneer ATV",
             "category": "atv",
             "maxPersons": 4,
-            "halfDay": 50,
-            "fullDay": 70,
-            "description": "Rugged side-by-side ATV that seats up to 4 passengers."
+            "reservationHalfDay": 50,
+            "reservationFullDay": 70,
+            "walkInHalfDay": 60,
+            "walkInFullDay": 80,
+            "details": {
+                "model": "Honda Pioneer 1000",
+                "description": "Rugged side-by-side ATV that seats up to 4 passengers."
+            }
         },
         {
             "type": "Jeep Wrangler - 2 door",
             "category": "jeep",
             "maxPersons": 4,
-            "halfDay": 60,
-            "fullDay": 85,
-            "description": "Iconic 2-door Jeep perfect for adventure seekers."
+            "reservationHalfDay": 60,
+            "reservationFullDay": 85,
+            "walkInHalfDay": 70,
+            "walkInFullDay": 90,
+            "details": {
+                "model": "Jeep Wrangler - 2 door",
+                "description": "Open air, manual transmission Jeep perfect for adventure seekers."
+            }
         },
         {
             "type": "Jeep Wrangler - 4 door with a/c",
             "category": "jeep",
             "maxPersons": 5,
-            "halfDay": 70,
-            "fullDay": 100,
-            "description": "Spacious 4-door Jeep with air conditioning for maximum comfort."
+            "reservationHalfDay": 70,
+            "reservationFullDay": 100,
+            "walkInHalfDay": 85,
+            "walkInFullDay": 125,
+            "details": {
+                "model": "Jeep Wrangler - 4 door",
+                "description": "Manual transmission with A/C, spacious enough for 5 passengers."
+            }
         }
-    ]
+    ],
+    "rentalServices": {
+        "security": [
+            "A $50 security deposit is required to confirm reservations.",
+            "Liability insurance is included.",
+            "Damage insurance is available for purchase."
+        ],
+        "requirements": [
+            "A valid drivers license is required in hand at the time of rental.",
+            "No one under the age of 12 years of age are allowed to ride on the scooters."
+        ],
+        "fuelAndMileage": [
+            "Fuel charge is not included.",
+            "Unlimited mileage."
+        ],
+        "deliveryAndReturn": [
+            "Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.",
+            "Rentals may be returned to either physical location."
+        ],
+        "payment": [
+            "Google Pay",
+            "Apple Pay",
+            "Cash",
+            "Credit card",
+            "Debit card",
+            "Venmo"
+        ]
+    }
 }
