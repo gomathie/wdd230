@@ -86,63 +86,67 @@
 
         <!-- Reservation Form -->
         <section class="reservation-form-section">
+
             <h3>Reservation Form</h3>
-            <form id="reservation-form" class="reservation-form">
+            <form method="get" action="./thankyou.html" id="reservation-form" class="reservation-form">
                 <div class="form-grid">
+
                     <div class="form-group">
-                        <label for="rental-date">Rental Date</label>
-                        <input type="date" id="rental-date" name="rental-date" required>
+                        <fieldset>
+                            <legend>Applicant Information</legend>
+                            <label for="customer-name">Full Name</label>
+                            <input type="text" id="customer-name" name="customer-name" required>
+
+
+
+                            <label for="customer-email">Email Address</label>
+                            <input type="email" id="customer-email" name="customer-email" required>
+
+
+                            <label for="customer-phone">Phone Number</label>
+                            <input type="tel" id="customer-phone" name="customer-phone" required>
+
+
+
+                            <label for="customer-location">Home State/Country</label>
+                            <input type="text" id="customer-location" name="customer-location" required>
+                        </fieldset>
                     </div>
 
                     <div class="form-group">
-                        <label for="rental-period">Rental Period</label>
-                        <select id="rental-period" name="rental-period" required>
-                            <option value="">Select Period</option>
-                            <option value="half-day">Half Day (3 hours)</option>
-                            <option value="full-day">Full Day</option>
-                        </select>
+                        <fieldset>
+                            <legend>Reservation Choices</legend>
+
+                            <label for="cruise-line">Cruise Line (if applicable)</label>
+                            <input type="text" id="cruise-line" name="cruise-line">
+
+
+                            <label for="rental-quantity">Number of Vehicles</label>
+                            <input type="number" id="rental-quantity" name="rental-quantity" min="1" max="5" value="1"
+                                required>
+
+                            <label for="rental-period">Rental Period</label>
+                            <select id="rental-period" name="rental-period" required>
+                                <option value="">Select Period</option>
+                                <option value="half-day">Half Day (3 hours)</option>
+                                <option value="full-day">Full Day</option>
+                            </select>
+
+                            <label for="rental-type">Rental Type</label>
+                            <select id="rental-type" name="rental-type" required>
+                                <option value="">Select Vehicle Type</option>
+                                <option value="scooter">Motor Scooter</option>
+                                <option value="jeep">Jeep</option>
+                                <option value="atv">Side-by-Side ATV</option>
+                            </select>
+
+                            <label for="rental-date">Rental Date</label>
+                            <input type="date" id="rental-date" name="rental-date" required>
+
+                        </fieldset>
                     </div>
 
-                    <div class="form-group">
-                        <label for="rental-type">Rental Type</label>
-                        <select id="rental-type" name="rental-type" required>
-                            <option value="">Select Vehicle Type</option>
-                            <option value="scooter">Motor Scooter</option>
-                            <option value="jeep">Jeep</option>
-                            <option value="atv">Side-by-Side ATV</option>
-                        </select>
-                    </div>
 
-                    <div class="form-group">
-                        <label for="rental-quantity">Number of Vehicles</label>
-                        <input type="number" id="rental-quantity" name="rental-quantity" min="1" max="5" value="1"
-                            required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="customer-name">Full Name</label>
-                        <input type="text" id="customer-name" name="customer-name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="customer-email">Email Address</label>
-                        <input type="email" id="customer-email" name="customer-email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="customer-phone">Phone Number</label>
-                        <input type="tel" id="customer-phone" name="customer-phone" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="customer-location">Home State/Country</label>
-                        <input type="text" id="customer-location" name="customer-location" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="cruise-line">Cruise Line (if applicable)</label>
-                        <input type="text" id="cruise-line" name="cruise-line">
-                    </div>
 
                     <div class="form-group full-width">
                         <label for="special-requests">Special Accommodations/Comments</label>
@@ -152,8 +156,7 @@
                 </div>
 
                 <div class="form-actions">
-                    <button type="submit" class="submit-button">Submit Reservation</button>
-                    <button type="reset" class="reset-button">Clear Form</button>
+                    <button type="submit" class="submit-button">Reserve Your Fun</button>
                 </div>
             </form>
         </section>
