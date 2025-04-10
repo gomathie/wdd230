@@ -13,7 +13,7 @@
     <!-- Weather Alert Banner -->
     <div id="weather-alert" class="weather-alert">
         <p>Today's high temperature: <span id="temp-max">Loading...</span>°C</p>
-        <button id="close-alert" aria-label="Close alert">×</button>
+        <button id="close-alert" aria-label="Close alert">❌</button>
     </div>
 
     <!-- Header -->
@@ -33,66 +33,27 @@
         </nav>
     </header>
 
-    <!-- Main Content - Home Page -->
-    <main class="home-page">
+    <main class="rentals-page">
+        <h2>Rental Options & Pricing</h2>
+        <p>Choose the perfect vehicle for your Cozumel adventure!</p>
 
-        <!-- Rental Summary Section -->
-        <section class="rental-summary">
-            <h2>Our Rental Options</h2>
-            <div class="rental-cards">
-                <div class="rental-card">
-                    <img src="images/scooter.jpg" alt="Motor Scooter">
-                    <h3>Motor Scooters</h3>
-                    <p>Perfect for solo travelers or couples looking to zip around the island.</p>
-                    <a href="rentals.html#scooters">See Options</a>
-                </div>
-                <div class="rental-card">
-                    <img src="images/jeep.jpg" alt="Jeep">
-                    <h3>Jeeps</h3>
-                    <p>Ideal for families or groups wanting to explore the rugged terrain.</p>
-                    <a href="rentals.html#jeeps">See Options</a>
-                </div>
-                <div class="rental-card">
-                    <img src="images/atv.jpg" alt="ATV">
-                    <h3>Side-by-Side ATVs</h3>
-                    <p>For the adventurous souls seeking to discover hidden trails.</p>
-                    <a href="rentals.html#atvs">See Options</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Locations Section -->
-        <section class="locations">
-            <h2>Our Locations</h2>
-            <div class="location-cards">
-                <div class="location-card">
-                    <h3>El Centro Location</h3>
-                    <p>Near the Playa del Carmen-Cozumel Ferry dock</p>
-                    <p>Open: 8:00 AM - 6:00 PM daily</p>
-                </div>
-                <div class="location-card">
-                    <h3>Terminal Puerta Maya</h3>
-                    <p>Near the cruise ship terminal</p>
-                    <p>Open: 8:00 AM - 6:00 PM daily</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Rentals Page Content (Placed here for reference, would be in a separate HTML file) -->
-    <div class="rentals-content" style="display: none;">
-        <main class="rentals-page">
-            <h2>Our Rental Options</h2>
-            <p>Choose the perfect vehicle for your Cozumel adventure!</p>
-
-            <!-- Rental Types Table -->
-            <section class="rental-table-section">
-                <h3>Rental Price List</h3>
+        <!-- Rental Types Table -->
+        <section class="rental-table-section">
+            <h3>Max Rental Pricing</h3>
+            <div class="table-container">
                 <table class="rental-table">
                     <thead>
                         <tr>
                             <th>Rental Type</th>
-                            <th>Max Persons</th>
+                            <th>Max. Persons</th>
+                            <th colspan="2">Reservation</th>
+                            <th colspan="2">Walk-In</th>
+                        </tr>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th>Half Day (3 hrs)</th>
+                            <th>Full Day</th>
                             <th>Half Day (3 hrs)</th>
                             <th>Full Day</th>
                         </tr>
@@ -101,65 +62,131 @@
                         <!-- Data will be populated from JSON -->
                     </tbody>
                 </table>
-            </section>
+            </div>
+        </section>
 
-            <!-- Detailed Rental Information -->
-            <section id="scooters" class="rental-details">
-                <h3>Motor Scooters</h3>
-                <div class="rental-detail-flex">
-                    <img src="images/scooter-detail.jpg" alt="Motor Scooter Details">
-                    <div class="rental-info">
-                        <h4>Available Models:</h4>
-                        <ul id="scooter-models">
-                            <!-- Data will be populated from JSON -->
-                        </ul>
-                        <p>Our scooters are perfect for exploring the island's paved roads and discovering hidden
-                            beaches.</p>
-                    </div>
+        <!-- Detailed Rental Information -->
+        <section id="scooters" class="rental-details">
+            <h3>Honda Motor Scooters</h3>
+            <div class="rental-detail-flex">
+                <img src="images/scooter-detail.jpg" alt="Motor Scooter Details">
+                <div class="rental-info">
+                    <h4>Available Models:</h4>
+                    <ul class="rental-models">
+                        <li><strong>Honda Metropolitan (49cc)</strong> - Perfect for solo travelers</li>
+                        <li><strong>Honda Dio (110cc)</strong> - Great for couples or friends</li>
+                        <li><strong>Honda PCX150 (149cc)</strong> - Our most powerful scooter option</li>
+                    </ul>
+                    <p>Our scooters are perfect for exploring the island's paved roads and discovering hidden beaches.
+                        Easy to ride and fuel-efficient, they're ideal for quick trips and sightseeing.</p>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="jeeps" class="rental-details">
-                <h3>Jeeps</h3>
-                <div class="rental-detail-flex">
-                    <img src="images/jeep-detail.jpg" alt="Jeep Details">
-                    <div class="rental-info">
-                        <h4>Available Models:</h4>
-                        <ul id="jeep-models">
-                            <!-- Data will be populated from JSON -->
-                        </ul>
-                        <p>Our Jeeps offer the perfect combination of comfort and off-road capability for any adventure.
-                        </p>
-                    </div>
+        <section id="atvs" class="rental-details">
+            <h3>Side-by-Side ATVs</h3>
+            <div class="rental-detail-flex">
+                <img src="images/atv-detail.jpg" alt="ATV Details">
+                <div class="rental-info">
+                    <h4>Available Models:</h4>
+                    <ul class="rental-models">
+                        <li><strong>Honda Pioneer 1000</strong> - Seats up to 4 people comfortably</li>
+                    </ul>
+                    <p>Experience the thrill of exploring Cozumel's rugged terrain with our powerful ATVs. Perfect for
+                        adventurous groups wanting to discover the wild side of the island.</p>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="atvs" class="rental-details">
-                <h3>Side-by-Side ATVs</h3>
-                <div class="rental-detail-flex">
-                    <img src="images/atv-detail.jpg" alt="ATV Details">
-                    <div class="rental-info">
-                        <h4>Available Models:</h4>
-                        <ul id="atv-models">
-                            <!-- Data will be populated from JSON -->
-                        </ul>
-                        <p>Experience the thrill of exploring Cozumel's rugged terrain with our powerful ATVs.</p>
-                    </div>
+        <section id="jeeps" class="rental-details">
+            <h3>Jeeps</h3>
+            <div class="rental-detail-flex">
+                <img src="images/jeep-detail.jpg" alt="Jeep Details">
+                <div class="rental-info">
+                    <h4>Available Models:</h4>
+                    <ul class="rental-models">
+                        <li><strong>Jeep Wrangler - 4 door</strong> - Manual with A/C, seats up to 5 people</li>
+                        <li><strong>Jeep Wrangler - 2 door</strong> - Open air, manual, seats up to 4 people</li>
+                    </ul>
+                    <p>Our Jeeps offer the perfect combination of comfort and off-road capability. Ideal for families or
+                        groups wanting to explore every corner of Cozumel.</p>
                 </div>
-            </section>
-        </main>
-    </div>
+            </div>
+        </section>
+
+        <!-- Rental Services and Agreements -->
+        <section class="rental-services">
+            <h3>Rental Services and Agreements</h3>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Security & Insurance</h4>
+                    <ul>
+                        <li>$50 security deposit required to confirm reservations</li>
+                        <li>Liability insurance included</li>
+                        <li>Optional damage insurance available for purchase</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <i class="fas fa-id-card"></i>
+                    <h4>Requirements</h4>
+                    <ul>
+                        <li>Valid driver's license required at time of rental</li>
+                        <li>No one under 12 years of age allowed on scooters</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <i class="fas fa-gas-pump"></i>
+                    <h4>Fuel & Mileage</h4>
+                    <ul>
+                        <li>Fuel charge not included</li>
+                        <li>Unlimited mileage on all rentals</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <i class="fas fa-truck"></i>
+                    <h4>Delivery & Return</h4>
+                    <ul>
+                        <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals</li>
+                        <li>Rentals may be returned to either physical location</li>
+                    </ul>
+                </div>
+
+                <div class="service-item">
+                    <i class="fas fa-credit-card"></i>
+                    <h4>Payment Options</h4>
+                    <ul>
+                        <li>Google Pay</li>
+                        <li>Apple Pay</li>
+                        <li>Cash</li>
+                        <li>Credit card</li>
+                        <li>Debit card</li>
+                        <li>Venmo</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="rentals-cta">
+            <h3>Ready to Book Your Adventure?</h3>
+            <p>Secure your rental now to ensure availability for your Cozumel exploration!</p>
+            <a href="reservations.html" class="cta-button">Make a Reservation</a>
+        </section>
+    </main>
 
 
 
 
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="images/scoots-logo-small.png" alt="Scoots Logo" class="logo-small">
-                <h3>~Scoots~</h3>
+                <img src="./images/scoots-logo.png" alt="Scoots Logo" class="logo-small">
+                <h3>Scoots</h3>
             </div>
 
             <div class="footer-contact">
@@ -171,24 +198,34 @@
             <div class="footer-social">
                 <h4>Follow Us</h4>
                 <div class="social-icons">
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/" aria-label="Facebook">
+                        <img src="./images/facebook-30.png" alt="Facebook Icon">
+                    </a>
+                    <a href="https://www.Instagram.com/" aria-label="Instagram">
+                        <img src="./images/instagram-30.png" alt="Instagram Icon">
+                    </a>
+                    <a href="https://www.TikTok.com/" aria-label="TikTok">
+                        <img src="./images/tiktok-30.png" alt="TikTok Icon">
+                    </a>
+                    <a href="https://www.YouTube.com/" aria-label="YouTube">
+                        <img src="./images/youtube-30.png" alt="YouTube Icon">
+                    </a>
                 </div>
             </div>
+
+
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2025 ~Scoots~ Motor Rentals. All Rights Reserved.</p>
-            <p>Website designed by [Your Name]</p>
+            <p>&copy; 2025 Scoots Motor Rentals. All Rights Reserved.</p>
+            <p>Website designed by Mathias Lago</p>
         </div>
     </footer>
 
     <!-- JavaScript -->
-    <script src="js/weather.js"></script>
+    <script src="./scripts/weather.js"></script>
+    <script src="./scripts/scoots.js"></script>
     <script src="./scripts/rental.js"></script>
-    <script src="js/script.js"></script>
 </body>
 
 </html>
