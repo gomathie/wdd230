@@ -1,4 +1,7 @@
-/* ===== GLOBAL STYLES ===== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/*  GLOBAL STYLES  */
 :root {
     --primary-color: #FF6B35;
     --secondary-color: #004E7C;
@@ -20,7 +23,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', 'Montserrat', 'Roboto', sans-serif;
     line-height: 1.6;
     color: var(--dark-color);
     background-color: var(--light-color);

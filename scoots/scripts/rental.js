@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function () {
     // Only execute on the rentals page
     if (document.querySelector('.rentals-page')) {
@@ -7,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     async function loadRentalData() {
         try {
-            const response = await fetch('https://github.com/gomathie/wdd230/blob/main/scoots/data/rentals.json');
+            const response = await fetch('https://raw.githubusercontent.com/gomathie/wdd230/main/scoots/data/rentals.json');
 
             const data = await response.json();
 
