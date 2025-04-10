@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scoots Motor Scooter Rentals | Cozumel, Mexico</title>
+    <title>Rservations | Scoots Motor Scooter Rentals | Cozumel, Mexico</title>
     <meta name="author" content="Mathias Lago" />
     <meta name="description"
         content="Scoots motor scooter rental company located on the island of Cozumel off the coast of Mexico in the western Caribbean Sea.
@@ -32,11 +32,6 @@
 </head>
 
 <body>
-    <!-- Weather Alert Banner -->
-    <div id="weather-alert" class="weather-alert">
-        <p>Today's high temperature: <span id="temp-max">Loading...</span>°C</p>
-        <button id="close-alert" aria-label="Close alert">×</button>
-    </div>
 
     <!-- Header -->
     <header>
@@ -62,24 +57,32 @@
 
         <!-- Rental Agreement Section -->
         <section class="rental-agreement">
-            <h3>Rental Agreement Information</h3>
-            <div class="agreement-content">
-                <h4>Requirements to Rent</h4>
-                <ul>
-                    <li>Valid driver's license</li>
-                    <li>Major credit card</li>
-                    <li>Minimum age: 18 for scooters, 21 for Jeeps and ATVs</li>
-                    <li>Liability insurance included</li>
-                    <li>Security deposit required on site</li>
-                </ul>
 
-                <h4>Rental Policies</h4>
-                <ul>
-                    <li>Fuel policy: Return with same fuel level</li>
-                    <li>Cancellations: Free up to 24 hours before rental time</li>
-                    <li>Late returns: Additional hourly charge applies</li>
-                    <li>Damage policy: Renter responsible for damages beyond normal wear and tear</li>
-                </ul>
+            <p>Kindy take notes of the following Rental Agreement Information: </p>
+
+            <div class="form-grid">
+                <div class="agreement-content">
+                    <h4>Requirements to Rent</h4>
+                    <ul>
+                        <li>Valid driver's license</li>
+                        <li>Major credit card</li>
+                        <li>Minimum age: 18 for scooters, 21 for Jeeps and ATVs</li>
+                        <li>Liability insurance included</li>
+                        <li>Security deposit required on site</li>
+                    </ul>
+                </div>
+
+                <div class="agreement-content">
+                    <h4>Rental Policies</h4>
+                    <ul>
+                        <li>Fuel policy: Return with same fuel level</li>
+                        <li>Cancellations: Free up to 24 hours before rental time</li>
+                        <li>Late returns: Additional hourly charge applies</li>
+                        <li>Damage policy: Renter responsible for damages beyond normal wear and tear</li>
+                    </ul>
+                </div>
+            </div>
+
             </div>
         </section>
 
@@ -87,21 +90,21 @@
         <!-- Reservation Form -->
         <section class="reservation-form-section">
 
-            <h3>Reservation Form</h3>
+            <h4>Reservation Form</h4>
             <form method="get" action="./thankyou.html" id="reservation-form" class="reservation-form">
                 <div class="form-grid">
 
                     <div class="form-group">
                         <fieldset>
                             <legend>Applicant Information</legend>
-                            <label for="customer-name">Full Name</label>
+                            <label for="customer-name">Full Name*</label>
                             <input type="text" id="customer-name" name="customer-name" required>
 
-                            <label for="customer-email">Email Address</label>
+                            <label for="customer-email">Email Address*</label>
                             <input type="email" id="customer-email" name="customer-email" required>
 
 
-                            <label for="customer-phone">Phone Number</label>
+                            <label for="customer-phone">Phone Number*</label>
                             <input type="tel" id="customer-phone" name="customer-phone" required>
 
                             <label for="customer-location">Home State/Country</label>
@@ -113,7 +116,7 @@
                         <fieldset>
                             <legend>Reservation Choices</legend>
 
-                            <label for="rental-type">Rental Type</label>
+                            <label for="rental-type">Rental Type*</label>
                             <select id="rental-type" name="rental-type" required>
                                 <option value="">Select Vehicle Type</option>
                                 <option value="scooter">Motor Scooter</option>
@@ -121,14 +124,14 @@
                                 <option value="atv">Side-by-Side ATV</option>
                             </select>
 
-                            <label for="rental-period">Rental Period</label>
+                            <label for="rental-period">Rental Period*</label>
                             <select id="rental-period" name="rental-period" required>
                                 <option value="">Select Period</option>
                                 <option value="half-day">Half Day (3 hours)</option>
                                 <option value="full-day">Full Day</option>
                             </select>
 
-                            <label for="rental-date">Rental Date</label>
+                            <label for="rental-date">Rental Date*</label>
                             <input type="date" id="rental-date" name="rental-date" required>
 
 

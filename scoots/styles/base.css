@@ -582,20 +582,10 @@ h3 {
     margin-bottom: 3rem;
 }
 
-.agreement-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-top: 1rem;
-}
 
-.agreement-content>div {
-    flex: 1;
-    min-width: 300px;
-}
 
 .agreement-content h4 {
-    margin-bottom: 1rem;
+    margin: 1rem;
     color: var(--primary-color);
 }
 
@@ -635,6 +625,19 @@ label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 500;
+}
+
+fieldset {
+    display: block;
+    min-inline-size: min-content;
+    margin-inline: 2px;
+    border-width: 2px;
+    border-style: groove;
+    border-color: threedface;
+    border-image: initial;
+    padding-block: 0.35em 0.625em;
+    padding-inline: 0.75em;
+    border-radius: 1cap;
 }
 
 input,
