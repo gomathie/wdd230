@@ -668,18 +668,7 @@ textarea {
     transform: translateY(-2px);
 }
 
-.reset-button {
-    background-color: #6c757d;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    font-weight: bold;
-    border-radius: var(--border-radius);
-    width: 100%;
-}
 
-.reset-button:hover {
-    background-color: #5a6268;
-}
 
 /* ===== CONTACT PAGE STYLES ===== */
 .contact-page {

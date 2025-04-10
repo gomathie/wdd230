@@ -97,16 +97,12 @@
                             <label for="customer-name">Full Name</label>
                             <input type="text" id="customer-name" name="customer-name" required>
 
-
-
                             <label for="customer-email">Email Address</label>
                             <input type="email" id="customer-email" name="customer-email" required>
 
 
                             <label for="customer-phone">Phone Number</label>
                             <input type="tel" id="customer-phone" name="customer-phone" required>
-
-
 
                             <label for="customer-location">Home State/Country</label>
                             <input type="text" id="customer-location" name="customer-location" required>
@@ -117,21 +113,6 @@
                         <fieldset>
                             <legend>Reservation Choices</legend>
 
-                            <label for="cruise-line">Cruise Line (if applicable)</label>
-                            <input type="text" id="cruise-line" name="cruise-line">
-
-
-                            <label for="rental-quantity">Number of Vehicles</label>
-                            <input type="number" id="rental-quantity" name="rental-quantity" min="1" max="5" value="1"
-                                required>
-
-                            <label for="rental-period">Rental Period</label>
-                            <select id="rental-period" name="rental-period" required>
-                                <option value="">Select Period</option>
-                                <option value="half-day">Half Day (3 hours)</option>
-                                <option value="full-day">Full Day</option>
-                            </select>
-
                             <label for="rental-type">Rental Type</label>
                             <select id="rental-type" name="rental-type" required>
                                 <option value="">Select Vehicle Type</option>
@@ -140,8 +121,24 @@
                                 <option value="atv">Side-by-Side ATV</option>
                             </select>
 
+                            <label for="rental-period">Rental Period</label>
+                            <select id="rental-period" name="rental-period" required>
+                                <option value="">Select Period</option>
+                                <option value="half-day">Half Day (3 hours)</option>
+                                <option value="full-day">Full Day</option>
+                            </select>
+
                             <label for="rental-date">Rental Date</label>
                             <input type="date" id="rental-date" name="rental-date" required>
+
+
+                            <label for="rental-quantity">Number of Vehicles</label>
+                            <input type="number" id="rental-quantity" name="rental-quantity" min="1" max="5" value="1"
+                                required>
+
+
+                            <label for="cruise-line">Cruise Line (if applicable)</label>
+                            <input type="text" id="cruise-line" name="cruise-line">
 
                         </fieldset>
                     </div>
